@@ -2,7 +2,7 @@
 {
     'license': 'LGPL-3',
     'name': 'Default User Groups',
-    'version': '19.0.0.0.0',
+    'version': '18.0.1.0.0',
     'summary': 'Automatically assign default groups to new users',
     'author': 'IntelliSyncData',
     'website': 'https://intellisyncdata.com',

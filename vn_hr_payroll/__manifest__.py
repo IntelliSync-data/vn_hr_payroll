@@ -1,6 +1,6 @@
 {
     "name": "Vietnam HR Payroll",
-    "version": "19.0.0.0.0",
+    "version": "18.0.1.0.0",
     "category": "ISD Modules",
     "summary": "Vietnam Payroll & Salary Management for Odoo Community",
     "description": """

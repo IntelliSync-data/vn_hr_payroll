@@ -1,6 +1,6 @@
 {
     'name': 'Contract Extension (Hourly/Monthly)',
-    'version': '19.0.0.0.0',
+    'version': '18.0.1.0.0',
     'category': 'ISD Modules',
     'summary': 'Extends contracts to support hourly and monthly wages.',
     'description': """
