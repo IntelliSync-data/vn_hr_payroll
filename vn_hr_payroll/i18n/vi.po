@@ -1,0 +1,2178 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vn_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-28 14:32+0000\n"
+"PO-Revision-Date: 2025-10-28 14:32+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: vi\n"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid ""
+"# Available variables: categories, payslip, employee, contract, rules, "
+"result, result_qty, result_rate\\n# Enter a Python expression that returns a "
+"boolean. Example: result = rules.NET > 1000"
+msgstr ""
+"# Các biến có sẵn: categories, payslip, employee, contract, rules, "
+"result, result_qty, result_rate\\n# Nhập biểu thức Python trả về boolean. "
+"Ví dụ: result = rules.NET > 1000"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid ""
+"# Available variables: categories, payslip, employee, contract, rules, "
+"result, result_qty, result_rate\\n# Enter a Python expression that returns a "
+"float. Example: result = contract.wage * 0.10"
+msgstr ""
+"# Các biến có sẵn: categories, payslip, employee, contract, rules, "
+"result, result_qty, result_rate\\n# Nhập biểu thức Python trả về float. "
+"Ví dụ: result = contract.wage * 0.10"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__state
+msgid ""
+"* When the payslip is created the status is 'Draft'\n"
+"                \n"
+"* If the payslip is under verification, the status is 'Waiting'\n"
+"                \n"
+"* If the payslip is confirmed then status is set to 'Done'\n"
+"                \n"
+"* When user cancel payslip the status is 'Rejected'"
+msgstr "* Khi phiếu lương được tạo, trạng thái là 'Nháp'\n                \n* Nếu phiếu lương đang được xác minh, trạng thái là 'Chờ Duyệt'\n                \n* Nếu phiếu lương được xác nhận, trạng thái là 'Hoàn Thành'\n                \n* Khi người dùng hủy phiếu lương, trạng thái là 'Từ Chối'"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Allowances</strong>"
+msgstr "<strong>Phụ Cấp</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Amount (VND)</strong>"
+msgstr "<strong>Số Tiền (VND)</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Basic Wage</strong>"
+msgstr "<strong>Lương Cơ Bản</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Company:</strong>"
+msgstr "<strong>Công Ty:</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Description</strong>"
+msgstr "<strong>Mô Tả</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Employee:</strong>"
+msgstr "<strong>Nhân Viên:</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Gross Wage</strong>"
+msgstr "<strong>Lương Gộp</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Hourly/Monthly Rate</strong>"
+msgstr "<strong>Mức Lương Giờ/Tháng</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Item</strong>"
+msgstr "<strong>Mục</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Net Income</strong>"
+msgstr "<strong>Thu Nhập Ròng</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Period:</strong>"
+msgstr "<strong>Kỳ:</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Personal Income Tax</strong>"
+msgstr "<strong>Thuế Thu Nhập Cá Nhân</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Reference:</strong>"
+msgstr "<strong>Mã Số:</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Total Insurance (Employee)</strong>"
+msgstr "<strong>Tổng Bảo Hiểm (Nhân Viên)</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Worked Hours</strong>"
+msgstr "<strong>Giờ Làm Việc</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid ""
+"<strong>💡 Pro Tip:</strong> Use the template variables above to create "
+"dynamic, personalized emails just like MailChimp!\n"
+"                                    Your email will combine Header + Content "
+"+ Footer automatically."
+msgstr ""
+"<strong>💡 Mẹo:</strong> Sử dụng các biến template trên để tạo "
+"email động, cá nhân hóa giống như MailChimp!\n"
+"                                    Email của bạn sẽ kết hợp Header + Content "
+"+ Footer tự động."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid ""
+"<strong>📄 PDF Templates:</strong> Design your payslip PDF layout with "
+"Header + Content + Footer templates.\n"
+"                                    The Content template includes QWeb "
+"syntax for dynamic payslip lines rendering."
+msgstr ""
+"<strong>📄 Mẫu PDF:</strong> Thiết kế layout phiếu lương PDF với "
+"Header + Content + Footer templates.\n"
+"                                    Template Content bao gồm cú pháp QWeb "
+"cho việc render các dòng phiếu lương động."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_needaction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_needaction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_needaction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_needaction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_needaction
+msgid "Action Needed"
+msgstr "Cần Xử Lý"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__active
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__active
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__active
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__active
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__active
+msgid "Active"
+msgstr "Hoạt Động"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_ids
+msgid "Activities"
+msgstr "Hoạt Động"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_exception_decoration
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_exception_decoration
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_exception_decoration
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_exception_decoration
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Biểu Tượng Ngoại Lệ Hoạt Động"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_state
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_state
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_state
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_state
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_state
+msgid "Activity State"
+msgstr "Trạng Thái Hoạt Động"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_type_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_type_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_type_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_type_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Biểu Tượng Loại Hoạt Động"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__actual_working_days
+msgid "Actual Working Days"
+msgstr "Ngày Làm Thực Tế"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__actual_working_days
+msgid "Actual days worked (Total - PTO - Unpaid)"
+msgstr "Số ngày làm thực tế (Tổng - Nghỉ có lương - Nghỉ không lương)"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_form
+msgid "Additional notes about this category..."
+msgstr "Ghi chú thêm về danh mục này..."
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_allowances
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__allowances
+msgid "Allowances"
+msgstr "Phụ Cấp"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__condition_select__none
+msgid "Always True"
+msgstr "Luôn Đúng"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__amount
+msgid "Amount"
+msgstr "Số Tiền"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Amount Computation"
+msgstr "Công Thức Tính"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__amount_select
+msgid "Amount Type"
+msgstr "Loại Số Tiền"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__annually
+msgid "Annually"
+msgstr "Hàng Năm"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__appears_on_payslip
+msgid "Appears on Payslip"
+msgstr "Hiển Thị Trên Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_search
+msgid "Archived"
+msgstr "Đã Lưu Trữ"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip_force_delete_wizard.py:0
+msgid "Are you sure you want to force delete %s payslips?"
+msgstr "Bạn có chắc muốn xóa %s phiếu lương?"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip_force_delete_wizard.py:0
+msgid "Are you sure you want to force delete this payslip?"
+msgstr "Bạn có chắc muốn xóa phiếu lương này?"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_ir_attachment
+msgid "Attachment"
+msgstr "Tệp Đính Kèm"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_attachment_count
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_attachment_count
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_attachment_count
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_attachment_count
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số Tệp Đính Kèm"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__email_template_help
+msgid "Available Template Variables"
+msgstr "Biến Template Có Sẵn"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_basic_wage
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__basic_wage
+msgid "Basic Wage"
+msgstr "Lương Cơ Bản"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_basic_wage
+msgid "Basic wage amount in VND"
+msgstr "Số tiền lương cơ bản (VND)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__bi-monthly
+msgid "Bi-monthly"
+msgstr "2 Tháng/Lần"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__bi-weekly
+msgid "Bi-weekly"
+msgstr "2 Tuần/Lần"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payroll_cc_email
+msgid "CC Email for Payroll"
+msgstr "Email CC"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payroll_cc_email
+msgid "From Email for Payroll"
+msgstr "Email gửi"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payroll_cc_email
+msgid "Email address to use as sender when sending payroll emails. If empty, system default email will be used."
+msgstr "Email gửi khi gửi email lương. Nếu trống, email mặc định của hệ thống sẽ được sử dụng."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.view_vn_payslip_force_delete_wizard_form
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__category_id
+msgid "Category"
+msgstr "Danh Mục"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__children_ids
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_form
+msgid "Child Categories"
+msgstr "Danh Mục Con"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__code
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__code
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__code
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__code
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__code
+msgid "Code"
+msgstr "Mã"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__company_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__company_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__company_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__company_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__company_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__company_id
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_search
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Company"
+msgstr "Công Ty"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Company Contribution"
+msgstr "Đóng Góp Công Ty"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Computation"
+msgstr "Công Thức"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Compute Sheet"
+msgstr "Tính Toán"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__condition_select
+msgid "Condition Based on"
+msgstr "Điều Kiện Dựa Trên"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Conditions"
+msgstr "Điều Kiện"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_payroll_configuration
+msgid "Configuration"
+msgstr "Cấu Hình"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.actions.act_window,help:vn_hr_payroll.action_vn_payroll_config
+msgid "Configure Vietnam Payroll settings"
+msgstr "Cấu hình thiết lập Payroll Việt Nam"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Confirm"
+msgstr "Xác Nhận"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.view_vn_payslip_force_delete_wizard_form
+msgid "Confirm Force Delete"
+msgstr "Xác Nhận Xóa Bắt Buộc"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_payslip_force_delete_wizard
+msgid "Confirm Force Delete Payslips"
+msgstr "Xác Nhận Xóa Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__confirmation_message
+msgid "Confirmation"
+msgstr "Xác Nhận"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Content Template"
+msgstr "Mẫu Nội Dung"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__contract_id
+msgid "Contract"
+msgstr "Hợp Đồng"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__country_id
+msgid "Country"
+msgstr "Quốc Gia"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.actions.act_window,help:vn_hr_payroll.action_vn_pit_tax_table
+msgid "Create a new PIT tax bracket"
+msgstr "Tạo bậc thuế TNCN mới"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.actions.act_window,help:vn_hr_payroll.action_vn_freelancer_tax_table
+msgid "Create a new freelancer tax table entry"
+msgstr "Tạo mục bảng thuế freelancer mới"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.actions.act_window,help:vn_hr_payroll.action_vn_payslip
+msgid "Create a new payslip"
+msgstr "Tạo phiếu lương mới"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__create_uid
+msgid "Created by"
+msgstr "Người Tạo"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__create_date
+msgid "Created on"
+msgstr "Ngày Tạo"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__date_from
+msgid "Date From"
+msgstr "Từ Ngày"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__date_to
+msgid "Date To"
+msgstr "Đến Ngày"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__paid_working_days
+msgid "Days used for salary calculation (Actual + PTO)"
+msgstr "Số ngày tính lương (Thực tế + Nghỉ có lương)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_dependant_deduction
+msgid "Deduction amount per dependant in VND"
+msgstr "Số tiền giảm trừ mỗi người phụ thuộc (VND)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__default_struct_id
+msgid "Default Salary Structure"
+msgstr "Cấu Trúc Lương Mặc Định"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__default_resource_calendar_id
+msgid "Default Working Hours"
+msgstr "Giờ Làm Việc Mặc Định"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__default_struct_id
+msgid "Default salary structure used for new contracts."
+msgstr "Cấu trúc lương mặc định cho hợp đồng mới."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.actions.act_window,help:vn_hr_payroll.action_vn_freelancer_tax_table
+msgid ""
+"Define tax rates and fixed deductions for different income ranges for "
+"freelancers."
+msgstr ""
+"Định nghĩa tỷ lệ thuế và giảm trừ cố định cho các khoảng thu nhập khác nhau "
+"cho freelancer."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__schedule_pay
+msgid "Defines the frequency of pay slips."
+msgstr "Định nghĩa tần suất phát hành phiếu lương."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_dependant_deduction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_dependant_deduction
+msgid "Dependant Deduction"
+msgstr "Giảm Trừ Người Phụ Thuộc"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__note
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__note
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__note
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Description"
+msgstr "Mô Tả"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Description of the rule..."
+msgstr "Mô tả quy tắc..."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__display_name
+msgid "Display Name"
+msgstr "Tên Hiển Thị"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vn_payslip__state__done
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Done"
+msgstr "Hoàn Thành"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.payslip_download_error
+msgid "Download Error"
+msgstr "Lỗi Tải Xuống"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vn_payslip__state__draft
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Draft"
+msgstr "Nháp"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Email Configuration"
+msgstr "Cấu Hình Email"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__email_content_template
+msgid "Email Content Template"
+msgstr "Mẫu Nội Dung Email"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__email_footer_template
+msgid "Email Footer Template"
+msgstr "Mẫu Chân Trang Email"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__email_header_template
+msgid "Email Header Template"
+msgstr "Mẫu Đầu Trang Email"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Email Setup"
+msgstr "Thiết Lập Email"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__email_subject_template
+msgid "Email Subject Template"
+msgstr "Mẫu Tiêu Đề Email"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Email Template Design (MailChimp Style)"
+msgstr "Thiết Kế Mẫu Email (Kiểu MailChimp)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__payroll_cc_email
+msgid "Email address to CC when sending payroll emails to employees"
+msgstr "Địa chỉ email CC khi gửi email lương cho nhân viên"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__email_subject_template
+msgid "Email subject template. Use {{variable}} for dynamic data."
+msgstr "Mẫu tiêu đề email. Dùng {{variable}} cho dữ liệu động."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__employee_id
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Employee"
+msgstr "Nhân Viên"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr "Hợp Đồng Nhân Viên"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Employee Contribution"
+msgstr "Đóng Góp Nhân Viên"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_pit_tax_table__income_to
+msgid "Ending income amount for this tax bracket"
+msgstr "Mức thu nhập kết thúc cho bậc thuế này"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__amount_fix
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__amount_select__fix
+msgid "Fixed Amount"
+msgstr "Số Tiền Cố Định"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__fixed_deduction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__fixed_deduction
+msgid "Fixed Deduction"
+msgstr "Giảm Trừ Cố Định"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_pit_tax_table__fixed_deduction
+msgid "Fixed deduction amount for this bracket"
+msgstr "Số tiền giảm trừ cố định cho bậc này"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_follower_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_follower_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_follower_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_follower_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_follower_ids
+msgid "Followers"
+msgstr "Người Theo Dõi"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_partner_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_partner_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_partner_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_partner_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người Theo Dõi (Đối Tác)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__activity_type_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_type_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_type_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__activity_type_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icon Font Awesome, ví dụ: fa-tasks"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Footer Template"
+msgstr "Mẫu Chân Trang"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__amount_percentage
+msgid "For Percentage amount type"
+msgstr "Cho kiểu số tiền phần trăm"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.server,name:vn_hr_payroll.action_force_delete_payslip_form
+#: model:ir.actions.server,name:vn_hr_payroll.action_force_delete_payslips
+msgid "Force Delete"
+msgstr "Xóa Bắt Buộc"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vn_freelancer_tax_table
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_freelancer_tax_table
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_list
+msgid "Freelancer Tax Table"
+msgstr "Bảng Thuế Freelancer"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__gross_wage
+msgid "Gross Wage"
+msgstr "Lương Gộp"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_search
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Group By"
+msgstr "Nhóm Theo"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__hi_company
+msgid "HI (Company)"
+msgstr "BHYT (Công Ty)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__hi_employee
+msgid "HI (Employee)"
+msgstr "BHYT (Nhân Viên)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_hi_rate_company
+msgid "HI Rate (Company)"
+msgstr "Tỷ Lệ BHYT (Công Ty)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_hi_rate_employee
+msgid "HI Rate (Employee)"
+msgstr "Tỷ Lệ BHYT (Nhân Viên)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_hi_salary_cap
+msgid "HI Salary Cap"
+msgstr "Trần Lương BHYT"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__email_content_template
+msgid "HTML template for email content. Use {{variable}} for dynamic data."
+msgstr "Mẫu HTML cho nội dung email. Dùng {{variable}} cho dữ liệu động."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__email_footer_template
+msgid "HTML template for email footer. Use {{variable}} for dynamic data."
+msgstr "Mẫu HTML cho chân trang email. Dùng {{variable}} cho dữ liệu động."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__email_header_template
+msgid "HTML template for email header. Use {{variable}} for dynamic data."
+msgstr "Mẫu HTML cho đầu trang email. Dùng {{variable}} cho dữ liệu động."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__payslip_content_template
+msgid ""
+"HTML template for payslip content (PDF). Use {{variable}} for dynamic data "
+"and QWeb syntax."
+msgstr "Mẫu HTML cho nội dung phiếu lương (PDF). Dùng {{variable}} cho dữ liệu động và cú pháp QWeb."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__payslip_footer_template
+msgid ""
+"HTML template for payslip footer (PDF). Use {{variable}} for dynamic data."
+msgstr "Mẫu HTML cho chân trang phiếu lương (PDF). Dùng {{variable}} cho dữ liệu động."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__payslip_header_template
+msgid ""
+"HTML template for payslip header (PDF). Use {{variable}} for dynamic data."
+msgstr "Mẫu HTML cho đầu trang phiếu lương (PDF). Dùng {{variable}} cho dữ liệu động."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__has_message
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__has_message
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__has_message
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__has_message
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__has_message
+msgid "Has Message"
+msgstr "Có Tin Nhắn"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Header Template"
+msgstr "Mẫu Đầu Trang"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Health Insurance (Employee)"
+msgstr "Bảo Hiểm Y Tế (Nhân Viên)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_hi_rate_company
+msgid "Health Insurance rate for company (%)"
+msgstr "Tỷ lệ Bảo hiểm y tế cho công ty (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_hi_rate_employee
+msgid "Health Insurance rate for employee (%)"
+msgstr "Tỷ lệ Bảo hiểm y tế cho nhân viên (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__id
+msgid "ID"
+msgstr "ID"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_exception_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_exception_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_exception_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_exception_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_exception_icon
+msgid "Icon"
+msgstr "Biểu Tượng"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__activity_exception_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_exception_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_exception_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__activity_exception_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Biểu tượng chỉ hoạt động ngoại lệ."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__message_needaction
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__message_needaction
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_needaction
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__message_needaction
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nếu được đánh dấu, tin nhắn mới cần sự chú ý của bạn."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__message_has_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__message_has_sms_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_sms_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_sms_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_sms_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu được đánh dấu, một số tin nhắn có lỗi gửi."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__active
+msgid ""
+"If the active field is set to false, it will allow you to hide the salary "
+"rule without removing it."
+msgstr ""
+"Nếu trường active được đặt thành false, nó sẽ cho phép bạn ẩn quy tắc lương "
+"mà không cần xóa nó."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__active
+msgid ""
+"If the active field is set to false, it will allow you to hide the salary "
+"structure without removing it."
+msgstr ""
+"Nếu trường active được đặt thành false, nó sẽ cho phép bạn ẩn cấu trúc lương "
+"mà không cần xóa nó."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.payslip_download_error
+msgid "If you believe this is an error, please contact HR department."
+msgstr "Nếu bạn cho rằng đây là lỗi, vui lòng liên hệ phòng Nhân sự."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__income_from
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__income_from
+msgid "Income From"
+msgstr "Thu Nhập Từ"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_pit_tax_table.py:0
+msgid "Income From must be less than Income To"
+msgstr "Thu Nhập Từ phải nhỏ hơn Thu Nhập Đến"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__income_to
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__income_to
+msgid "Income To"
+msgstr "Thu Nhập Đến"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Information"
+msgstr "Thông Tin"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Insurance"
+msgstr "Bảo Hiểm"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Insurance Caps"
+msgstr "Trần Bảo Hiểm"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Insurance Rates"
+msgstr "Tỷ Lệ Bảo Hiểm"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_insurance_wage
+msgid "Insurance Wage"
+msgstr "Lương Đóng Bảo Hiểm"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payroll_config.py:0
+msgid "Insurance rates must be between 0 and 100."
+msgstr "Tỷ lệ bảo hiểm phải từ 0 đến 100."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_is_follower
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_is_follower
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_is_follower
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_is_follower
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_is_follower
+msgid "Is Follower"
+msgstr "Đang Theo Dõi"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__is_freelancer
+msgid "Is Freelancer"
+msgstr "Là Freelancer"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__write_uid
+msgid "Last Updated by"
+msgstr "Người Cập Nhật"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__write_date
+msgid "Last Updated on"
+msgstr "Cập Nhật Lần Cuối"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_hi_salary_cap
+msgid "Maximum salary for Health Insurance contribution"
+msgstr "Mức lương tối đa để đóng Bảo hiểm y tế"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_si_salary_cap
+msgid "Maximum salary for Social Insurance contribution"
+msgstr "Mức lương tối đa để đóng Bảo hiểm xã hội"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_ui_salary_cap
+msgid "Maximum salary for Unemployment Insurance contribution"
+msgstr "Mức lương tối đa để đóng Bảo hiểm thất nghiệp"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_has_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi Gửi Tin Nhắn"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_ids
+msgid "Messages"
+msgstr "Tin Nhắn"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Month"
+msgstr "Tháng"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__monthly
+msgid "Monthly"
+msgstr "Hàng Tháng"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__my_activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__my_activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__my_activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__my_activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Hạn Hoạt Động Của Tôi"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "My Payslips"
+msgstr "Phiếu Lương Của Tôi"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__payslip_name
+msgid "Name to be used for payslips generated from this structure."
+msgstr "Tên sử dụng cho phiếu lương tạo từ cấu trúc này."
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__net_income
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Net Income"
+msgstr "Thu Nhập Ròng"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Net income cannot be negative"
+msgstr "Thu nhập ròng không thể âm"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "New Payslip"
+msgstr "Phiếu Lương Mới"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_calendar_event_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_calendar_event_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_calendar_event_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_calendar_event_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Sự Kiện Lịch Hoạt Động Tiếp Theo"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Hạn Hoạt Động Tiếp Theo"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_summary
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_summary
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_summary
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_summary
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_summary
+msgid "Next Activity Summary"
+msgstr "Tóm Tắt Hoạt Động Tiếp Theo"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_type_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_type_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_type_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_type_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_type_id
+msgid "Next Activity Type"
+msgstr "Loại Hoạt Động Tiếp Theo"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip_force_delete_wizard.py:0
+msgid "No payslips selected for force delete."
+msgstr "Không có phiếu lương nào được chọn để xóa bắt buộc."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__note
+msgid "Note"
+msgstr "Ghi Chú"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_form
+msgid "Notes"
+msgstr "Ghi Chú"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_needaction_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_needaction_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_needaction_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_needaction_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số Lượng Hành Động"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_number_of_dependants
+msgid "Number of Dependants"
+msgstr "Số Người Phụ Thuộc"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/hr_contract.py:0
+msgid "Number of dependants cannot be negative."
+msgstr "Số người phụ thuộc không thể âm."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_number_of_dependants
+msgid "Number of dependants for tax calculation"
+msgstr "Số người phụ thuộc để tính thuế"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_has_error_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_error_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_error_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_error_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số Lượng Lỗi"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__worked_hours
+msgid "Number of hours worked by the freelancer"
+msgstr "Số giờ làm việc của freelancer"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__message_needaction_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__message_needaction_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_needaction_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__message_needaction_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Số tin nhắn cần xử lý"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__message_has_error_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_error_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_error_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_error_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số tin nhắn có lỗi gửi"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__pto_days
+msgid "Number of paid leave days (Ngày nghỉ có lương)"
+msgstr "Số ngày nghỉ có lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__unpaid_leave_days
+msgid "Number of unpaid leave days (Nghỉ không lương)"
+msgstr "Số ngày nghỉ không lương"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: code:addons/vn_hr_payroll/models/vn_payslip_force_delete_wizard.py:0
+msgid "Only administrators can force delete payslips"
+msgstr "Chỉ quản trị viên mới có thể xóa bắt buộc phiếu lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_ir_attachment__pdf_password
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_product_document__pdf_password
+msgid "PDF Password"
+msgstr "Mật Khẩu PDF"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__pit
+msgid "PIT"
+msgstr "Thuế TNCN"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_pit_tax_table_view_form
+msgid "PIT Tax Bracket"
+msgstr "Bậc Thuế TNCN"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_pit_tax_table_view_tree
+msgid "PIT Tax Brackets"
+msgstr "Bậc Thuế TNCN"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vn_pit_tax_table
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_pit_tax_table
+msgid "PIT Tax Table"
+msgstr "Bảng Thuế TNCN"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__pto_days
+msgid "Paid Time Off Days"
+msgstr "Ngày Nghỉ Có Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__paid_working_days
+msgid "Paid Working Days"
+msgstr "Ngày Tính Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__parent_id
+msgid "Parent Category"
+msgstr "Danh Mục Cha"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__parent_id
+msgid "Parent Structure"
+msgstr "Cấu Trúc Cha"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__partner_id
+msgid "Partner"
+msgstr "Đối Tác"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__partner_id
+msgid "Partner for this salary rule, if applicable."
+msgstr "Đối tác cho quy tắc lương này, nếu có."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_ir_attachment__pdf_password
+#: model:ir.model.fields,help:vn_hr_payroll.field_product_document__pdf_password
+msgid "Password to open encrypted PDF file (for payslip)"
+msgstr "Mật khẩu mở file PDF đã mã hóa (cho phiếu lương)"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vn_payroll_config
+msgid "Payroll Configuration"
+msgstr "Cấu Hình Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_payroll_config
+msgid "Payroll Settings"
+msgstr "Cài Đặt Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.report,name:vn_hr_payroll.action_report_vn_payslip
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__payslip_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__payslip_id
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Payslip"
+msgstr "Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payslip_content_template
+msgid "Payslip Content Template"
+msgstr "Mẫu Nội Dung Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "Payslip Details"
+msgstr "Chi Tiết Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payslip_footer_template
+msgid "Payslip Footer Template"
+msgstr "Mẫu Chân Trang Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payslip_header_template
+msgid "Payslip Header Template"
+msgstr "Mẫu Đầu Trang Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_line_view_form
+msgid "Payslip Line"
+msgstr "Dòng Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__line_ids
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_line_view_tree
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Payslip Lines"
+msgstr "Chi Tiết Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__payslip_name
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Payslip Name"
+msgstr "Tên Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Payslip PDF Template Design (MailChimp Style)"
+msgstr "Thiết Kế Mẫu PDF Phiếu Lương (Kiểu MailChimp)"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Payslip Setup"
+msgstr "Thiết Lập Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "Payslip Summary"
+msgstr "Tóm Tắt Phiếu Lương"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Payslip email sent successfully!"
+msgstr "Email phiếu lương đã gửi thành công!"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vn_payslip
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__payslip_ids
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_payroll_payslips
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_payslip
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_tree
+msgid "Payslips"
+msgstr "Phiếu Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__amount_percentage
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__amount_select__percentage
+msgid "Percentage (%)"
+msgstr "Phần Trăm (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__amount_percentage_base
+msgid "Percentage based on"
+msgstr "Phần trăm dựa trên"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_personal_deduction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_personal_deduction
+msgid "Personal Deduction"
+msgstr "Giảm Trừ Bản Thân"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Personal Income Tax"
+msgstr "Thuế Thu Nhập Cá Nhân"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_personal_deduction
+msgid "Personal tax deduction amount in VND"
+msgstr "Số tiền giảm trừ thuế bản thân (VND)"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Preview"
+msgstr "Xem Trước"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__amount_python_compute
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__amount_select__python
+msgid "Python Code"
+msgstr "Mã Python"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__condition_python
+msgid "Python Condition"
+msgstr "Điều Kiện Python"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__condition_select__python
+msgid "Python Expression"
+msgstr "Biểu Thức Python"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__quarterly
+msgid "Quarterly"
+msgstr "Hàng Quý"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__condition_select__range
+msgid "Range"
+msgstr "Khoảng"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range
+msgid "Range Based on"
+msgstr "Khoảng Dựa Trên"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range_max
+msgid "Range Maximum"
+msgstr "Khoảng Tối Đa"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range_min
+msgid "Range Minimum"
+msgstr "Khoảng Tối Thiểu"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__rating_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__rating_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__rating_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__rating_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__rating_ids
+msgid "Ratings"
+msgstr "Đánh Giá"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Reject"
+msgstr "Từ Chối"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vn_payslip__state__cancel
+msgid "Rejected"
+msgstr "Từ Chối"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_user_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_user_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_user_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_user_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_user_id
+msgid "Responsible User"
+msgstr "Người Chịu Trách Nhiệm"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vnpayroll_salary_rule_category
+msgid "Rule Categories"
+msgstr "Danh Mục Quy Tắc"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vnpayroll_salary_rule
+msgid "Rules"
+msgstr "Quy Tắc"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__si_company
+msgid "SI (Company)"
+msgstr "BHXH (Công Ty)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__si_employee
+msgid "SI (Employee)"
+msgstr "BHXH (Nhân Viên)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_si_rate_company
+msgid "SI Rate (Company)"
+msgstr "Tỷ Lệ BHXH (Công Ty)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_si_rate_employee
+msgid "SI Rate (Employee)"
+msgstr "Tỷ Lệ BHXH (Nhân Viên)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_si_salary_cap
+msgid "SI Salary Cap"
+msgstr "Trần Lương BHXH"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_has_sms_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_sms_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_sms_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_sms_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Lỗi Gửi SMS"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Salary Rule"
+msgstr "Quy Tắc Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vnpayroll_salary_rule_category
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_list
+msgid "Salary Rule Categories"
+msgstr "Danh Mục Quy Tắc Lương"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_form
+msgid "Salary Rule Category"
+msgstr "Danh Mục Quy Tắc Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vnpayroll_salary_rule
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__rule_ids
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_list
+msgid "Salary Rules"
+msgstr "Quy Tắc Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__struct_id
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.hr_contract_view_form_vn
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_view_form
+msgid "Salary Structure"
+msgstr "Cấu Trúc Lương"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_type_view_form
+msgid "Salary Structure Type"
+msgstr "Loại Cấu Trúc Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vnpayroll_payroll_structure_type
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_type_view_list
+msgid "Salary Structure Types"
+msgstr "Loại Cấu Trúc Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vnpayroll_payroll_structure
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__struct_ids
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_view_list
+msgid "Salary Structures"
+msgstr "Cấu Trúc Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__parent_id
+msgid "Salary structure from which this structure inherits rules."
+msgstr "Cấu trúc lương mà cấu trúc này kế thừa quy tắc."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__schedule_pay
+msgid "Scheduled Pay"
+msgstr "Lịch Trả Lương"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_search
+msgid "Search Freelancer Tax Table"
+msgstr "Tìm Bảng Thuế Freelancer"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Search Payslips"
+msgstr "Tìm Phiếu Lương"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Selected payslips can be deleted normally using the Delete option."
+msgstr "Các phiếu lương đã chọn có thể xóa bình thường bằng tùy chọn Xóa."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__semi-annually
+msgid "Semi-annually"
+msgstr "6 Tháng/Lần"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Send Email"
+msgstr "Gửi Email"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__sequence
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__sequence
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__sequence
+msgid "Sequence"
+msgstr "Thứ Tự"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__sequence
+msgid "Sequence for ordering categories."
+msgstr "Thứ tự sắp xếp danh mục."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Set to Draft"
+msgstr "Chuyển Về Nháp"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__skip_pit
+msgid "Skip PIT"
+msgstr "Bỏ Qua Thuế TNCN"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__skip_pit
+msgid "Skip Personal Income Tax calculation"
+msgstr "Bỏ qua tính toán Thuế TNCN"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Social Insurance (Employee)"
+msgstr "Bảo Hiểm Xã Hội (Nhân Viên)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_si_rate_company
+msgid "Social Insurance rate for company (%)"
+msgstr "Tỷ lệ Bảo hiểm xã hội cho công ty (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_si_rate_employee
+msgid "Social Insurance rate for employee (%)"
+msgstr "Tỷ lệ Bảo hiểm xã hội cho nhân viên (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_dependant_deduction
+msgid "Standard deduction amount per dependant"
+msgstr "Số tiền giảm trừ mỗi người phụ thuộc tiêu chuẩn"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_personal_deduction
+msgid "Standard personal deduction amount"
+msgstr "Số tiền giảm trừ bản thân tiêu chuẩn"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_pit_tax_table__income_from
+msgid "Starting income amount for this tax bracket"
+msgstr "Mức thu nhập bắt đầu cho bậc thuế này"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__state
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Status"
+msgstr "Trạng Thái"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__activity_state
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_state
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_state
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__activity_state
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Trạng thái dựa trên hoạt động\n"
+"Quá hạn: Ngày đáo hạn đã qua\n"
+"Hôm nay: Ngày hoạt động là hôm nay\n"
+"Đã lên kế hoạch: Hoạt động trong tương lai."
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vnpayroll_payroll_structure_type
+msgid "Structure Types"
+msgstr "Loại Cấu Trúc"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vnpayroll_payroll_structure
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_type_view_form
+msgid "Structures"
+msgstr "Cấu Trúc"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Success"
+msgstr "Thành Công"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Tax"
+msgstr "Thuế"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.hr_contract_view_form_vn
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Tax Deductions"
+msgstr "Giảm Trừ Thuế"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__tax_rate
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__tax_rate
+msgid "Tax Rate (%)"
+msgstr "Thuế Suất (%)"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_pit_tax_table.py:0
+msgid "Tax brackets cannot overlap with existing brackets"
+msgstr "Bậc thuế không thể trùng lắp với bậc hiện tại"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_pit_tax_table.py:0
+msgid "Tax rate must be between 0 and 100"
+msgstr "Thuế suất phải từ 0 đến 100"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_pit_tax_table__tax_rate
+msgid "Tax rate percentage for this bracket"
+msgstr "Tỷ lệ thuế phần trăm cho bậc này"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__taxable_income
+msgid "Taxable Income"
+msgstr "Thu Nhập Tính Thuế"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Template Variables Guide"
+msgstr "Hướng Dẫn Biến Template"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_payroll_structure_type_code_company_uniq
+msgid "The code of the payroll structure type must be unique per company!"
+msgstr "Mã loại cấu trúc lương phải duy nhất cho mỗi công ty!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_salary_rule_category_code_company_uniq
+msgid "The code of the salary rule category must be unique per company!"
+msgstr "Mã danh mục quy tắc lương phải duy nhất cho mỗi công ty!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_salary_rule_code_company_uniq
+msgid "The code of the salary rule must be unique per company!"
+msgstr "Mã quy tắc lương phải duy nhất cho mỗi công ty!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_payroll_structure_code_company_uniq
+msgid "The code of the salary structure must be unique per company!"
+msgstr "Mã cấu trúc lương phải duy nhất cho mỗi công ty!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range
+msgid ""
+"The code that will be executed to get the value to compare to the range."
+msgstr ""
+"Mã sẽ được thực thi để lấy giá trị để so sánh với khoảng."
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "The employee does not have an email address."
+msgstr "Nhân viên không có địa chỉ email."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range_max
+msgid "The maximum value for the range condition"
+msgstr "Giá trị tối đa cho điều kiện khoảng"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range_min
+msgid "The minimum value for the range condition"
+msgstr "Giá trị tối thiểu cho điều kiện khoảng"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_payroll_structure_type_name_company_uniq
+msgid "The name of the payroll structure type must be unique per company!"
+msgstr "Tên loại cấu trúc lương phải duy nhất cho mỗi công ty!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_salary_rule_category_name_company_uniq
+msgid "The name of the salary rule category must be unique per company!"
+msgstr "Tên danh mục quy tắc lương phải duy nhất cho mỗi công ty!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_salary_rule_name_company_uniq
+msgid "The name of the salary rule must be unique per company!"
+msgstr "Tên quy tắc lương phải duy nhất cho mỗi công ty!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_payroll_structure_name_company_uniq
+msgid "The name of the salary structure must be unique per company!"
+msgstr "Tên cấu trúc lương phải duy nhất cho mỗi công ty!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__amount_percentage_base
+msgid ""
+"The python code that will be executed to get the value on which the "
+"percentage will be applied."
+msgstr ""
+"Mã Python sẽ được thực thi để lấy giá trị trên đó phần trăm sẽ được áp dụng."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.view_vn_payslip_force_delete_wizard_form
+msgid "This action cannot be undone."
+msgstr "Hành động này không thể hoàn tác."
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "This payslip can be deleted normally using the Delete option."
+msgstr "Phiếu lương này có thể xóa bình thường bằng tùy chọn Xóa."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Time Off"
+msgstr "Ngày Nghỉ"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Timesheet model not found. Cannot fetch timesheet hours."
+msgstr "Không tìm thấy model Timesheet. Không thể lấy giờ làm việc."
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Timesheet module is not installed. Cannot fetch timesheet hours."
+msgstr "Module Timesheet chưa được cài đặt. Không thể lấy giờ làm việc."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_total_deduction
+msgid "Total Deduction"
+msgstr "Tổng Giảm Trừ"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_total_dependant_deduction
+msgid "Total Dependant Deduction"
+msgstr "Tổng Giảm Trừ Người Phụ Thuộc"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_tree
+msgid "Total Gross"
+msgstr "Tổng Lương Gộp"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_tree
+msgid "Total Insurance"
+msgstr "Tổng Bảo Hiểm"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__total_insurance_company
+msgid "Total Insurance (Company)"
+msgstr "Tổng Bảo Hiểm (Công Ty)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__total_insurance_employee
+msgid "Total Insurance (Employee)"
+msgstr "Tổng Bảo Hiểm (Nhân Viên)"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_tree
+msgid "Total Net"
+msgstr "Tổng Lương Ròng"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_tree
+msgid "Total PIT"
+msgstr "Tổng Thuế TNCN"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__total_working_days
+msgid "Total Working Days"
+msgstr "Tổng Ngày Công"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_allowances
+msgid "Total allowances amount in VND"
+msgstr "Tổng số tiền phụ cấp (VND)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_total_dependant_deduction
+msgid "Total deduction for all dependants"
+msgstr "Tổng giảm trừ cho tất cả người phụ thuộc"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_total_deduction
+msgid "Total deduction including personal and dependants"
+msgstr "Tổng giảm trừ bao gồm bản thân và người phụ thuộc"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__total_working_days
+msgid "Total working days in period (Mon-Fri only)"
+msgstr "Tổng số ngày làm việc trong kỳ (Thứ 2 - Thứ 6)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__type_id
+msgid "Type"
+msgstr "Loại"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__activity_exception_decoration
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_exception_decoration
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_exception_decoration
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__activity_exception_decoration
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Loại hoạt động ngoại lệ trên bản ghi."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__ui_company
+msgid "UI (Company)"
+msgstr "BHTN (Công Ty)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__ui_employee
+msgid "UI (Employee)"
+msgstr "BHTN (Nhân Viên)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_ui_rate_company
+msgid "UI Rate (Company)"
+msgstr "Tỷ Lệ BHTN (Công Ty)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_ui_rate_employee
+msgid "UI Rate (Employee)"
+msgstr "Tỷ Lệ BHTN (Nhân Viên)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_ui_salary_cap
+msgid "UI Salary Cap"
+msgstr "Trần Lương BHTN"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Unemployment Insurance (Employee)"
+msgstr "Bảo Hiểm Thất Nghiệp (Nhân Viên)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_ui_rate_company
+msgid "Unemployment Insurance rate for company (%)"
+msgstr "Tỷ lệ Bảo hiểm thất nghiệp cho công ty (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_ui_rate_employee
+msgid "Unemployment Insurance rate for employee (%)"
+msgstr "Tỷ lệ Bảo hiểm thất nghiệp cho nhân viên (%)"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_union_fee
+msgid "Union Fee"
+msgstr "Phí Công Đoàn"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_union_fee
+msgid "Union fee amount in VND"
+msgstr "Số tiền phí công đoàn (VND)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__unpaid_leave_days
+msgid "Unpaid Leave Days"
+msgstr "Ngày Nghỉ Không Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__sequence
+msgid "Use to arrange calculation sequence"
+msgstr "Dùng để sắp xếp thứ tự tính toán"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__appears_on_payslip
+msgid "Used to display the salary rule on payslip."
+msgstr "Dùng để hiển thị quy tắc lương trên phiếu lương."
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vnpayroll_salary_rule
+msgid "VN Payroll Salary Rule"
+msgstr "Quy Tắc Lương VN"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vnpayroll_salary_rule_category
+msgid "VN Payroll Salary Rule Category"
+msgstr "Danh Mục Quy Tắc Lương VN"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vnpayroll_payroll_structure
+msgid "VN Payroll Structure"
+msgstr "Cấu Trúc Lương VN"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vnpayroll_payroll_structure_type
+msgid "VN Payroll Structure Type"
+msgstr "Loại Cấu Trúc Lương VN"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_structure_type_id
+msgid "VN Salary Structure Type"
+msgstr "Loại Cấu Trúc Lương VN"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Verify"
+msgstr "Gửi Duyệt"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_freelancer_tax_table
+msgid "Vietnam Freelancer Tax Table"
+msgstr "Bảng Thuế Freelancer Việt Nam"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_payroll_root
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.hr_contract_view_form_vn
+msgid "Vietnam Payroll"
+msgstr "Lương Việt Nam"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_payroll_config
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Vietnam Payroll Configuration"
+msgstr "Cấu Hình Payroll Việt Nam"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_payslip
+msgid "Vietnam Payslip"
+msgstr "Phiếu Lương Việt Nam"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_payslip_line
+msgid "Vietnam Payslip Line"
+msgstr "Dòng Phiếu Lương Việt Nam"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_pit_tax_table
+msgid "Vietnam Personal Income Tax Table"
+msgstr "Bảng Thuế Thu Nhập Cá Nhân Việt Nam"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Wage"
+msgstr "Lương"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.hr_contract_view_form_vn
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Wage Information"
+msgstr "Thông Tin Lương"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_insurance_wage
+msgid "Wage used for insurance contribution calculation"
+msgstr "Lương dùng để tính đóng bảo hiểm"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vn_payslip__state__verify
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Waiting"
+msgstr "Chờ Duyệt"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.view_vn_payslip_force_delete_wizard_form
+msgid "Warning!"
+msgstr "Cảnh Báo!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__website_message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__website_message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__website_message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__website_message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__website_message_ids
+msgid "Website Messages"
+msgstr "Tin Nhắn Website"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__website_message_ids
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__website_message_ids
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__website_message_ids
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__website_message_ids
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử trao đổi trên website"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__weekly
+msgid "Weekly"
+msgstr "Hàng Tuần"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__worked_hours
+msgid "Worked Hours"
+msgstr "Giờ Làm Việc"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.view_vn_payslip_force_delete_wizard_form
+msgid "Yes, Delete"
+msgstr "Có, Xóa"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "You cannot delete a payslip which is not in draft or cancelled state"
+msgstr "Bạn không thể xóa phiếu lương không ở trạng thái nháp hoặc đã hủy"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_form
+msgid "e.g. 0 - 2,000,000 (10%)"
+msgstr "ví dụ: 0 - 2,000,000 (10%)"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_view_form
+msgid "e.g. Base for new structures"
+msgstr "ví dụ: Cơ bản cho cấu trúc mới"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_form
+msgid "e.g. Basic"
+msgstr "ví dụ: Cơ Bản"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_type_view_form
+msgid "e.g. Employee"
+msgstr "ví dụ: Nhân Viên"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "e.g. Gross"
+msgstr "ví dụ: Gộp"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "e.g. Payslip - {{payslip_reference}} for {{employee_name}}"
+msgstr "ví dụ: Phiếu Lương - {{payslip_reference}} cho {{employee_name}}"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "e.g. categories.BASIC or contract.wage"
+msgstr "ví dụ: categories.BASIC hoặc contract.wage"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "e.g. hr@company.com"
+msgstr "ví dụ: hr@company.com"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "👁 Preview Content"
+msgstr "👁 Xem Trước Nội Dung"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "👁 Preview Footer"
+msgstr "👁 Xem Trước Chân Trang"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "👁 Preview Full Email"
+msgstr "👁 Xem Trước Email Đầy Đủ"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "👁 Preview Full Payslip"
+msgstr "👁 Xem Trước Phiếu Lương Đầy Đủ"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "👁 Preview Header"
+msgstr "👁 Xem Trước Đầu Trang"

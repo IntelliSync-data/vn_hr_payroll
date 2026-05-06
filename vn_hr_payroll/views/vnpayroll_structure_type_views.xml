@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Payroll Structure Type Tree View -->
+        <record id="vnpayroll_payroll_structure_type_view_list" model="ir.ui.view">
+            <field name="name">vnpayroll.payroll.structure.type.view.list</field>
+            <field name="model">vnpayroll.payroll.structure.type</field>
+            <field name="arch" type="xml">
+                <list string="Salary Structure Types">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="default_struct_id"/>
+                    <field name="company_id"/>
+                </list>
+            </field>
+        </record>
+       
+
+        <!-- Payroll Structure Type Form View -->
+        <record id="vnpayroll_payroll_structure_type_view_form" model="ir.ui.view">
+            <field name="name">vnpayroll.payroll.structure.type.view.form</field>
+            <field name="model">vnpayroll.payroll.structure.type</field>
+            <field name="arch" type="xml">
+                <form string="Salary Structure Type">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1><field name="name" placeholder="e.g. Employee"/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="code"/>
+                                <field name="default_struct_id" domain="[('type_id', '=', id)]" context="{'default_type_id': id}"/>
+                            </group>
+                            <group>
+                                <field name="company_id" groups="base.group_multi_company"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Structures" name="structures">
+                                <field name="struct_ids" nolabel="1">
+                                    <list>
+                                        <field name="name"/>
+                                        <field name="code"/>
+                                        <field name="active"/>
+                                        <field name="company_id" groups="base.group_multi_company"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

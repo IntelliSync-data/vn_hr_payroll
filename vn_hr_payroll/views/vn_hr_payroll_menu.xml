@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Main Menu -->
+        <menuitem id="menu_vn_hr_payroll_root"
+                  name="Vietnam Payroll"
+                  sequence="100"
+                  groups="vn_hr_payroll.group_vn_payroll_user,vn_hr_payroll.group_vn_payroll_manager"
+                  web_icon="vn_hr_payroll,static/description/icon.png"/>
+
+        <!-- Payslips Menu -->
+        <menuitem id="menu_vn_hr_payslip"
+                  name="Payslips"
+                  parent="menu_vn_hr_payroll_root"
+                  action="action_vn_payslip"
+                  groups="vn_hr_payroll.group_vn_payroll_user_payslips"
+                  sequence="10"/>
+
+        <!-- Payslip Schedules Menu -->
+        <menuitem id="menu_vn_payslip_schedule"
+                  name="Payslip Schedules"
+                  parent="menu_vn_hr_payroll_root"
+                  action="action_vn_payslip_schedule"
+                  groups="vn_hr_payroll.group_vn_payroll_user_schedules"
+                  sequence="15"/>
+
+        <!-- Configuration Menu - shows if user has any config permission -->
+        <menuitem id="menu_vn_hr_payroll_configuration"
+                  name="Configuration"
+                  parent="menu_vn_hr_payroll_root"
+                  groups="vn_hr_payroll.group_vn_payroll_user_settings,vn_hr_payroll.group_vn_payroll_user_pit_table,vn_hr_payroll.group_vn_payroll_user_structure_types,vn_hr_payroll.group_vn_payroll_user_freelancer_tax,vn_hr_payroll.group_vn_payroll_user_structures,vn_hr_payroll.group_vn_payroll_user_rule_categories,vn_hr_payroll.group_vn_payroll_user_rules,vn_hr_payroll.group_vn_payroll_manager"
+                  sequence="90"/>
+
+        <menuitem id="menu_vn_hr_payroll_config"
+                  name="Payroll Settings"
+                  parent="menu_vn_hr_payroll_configuration"
+                  action="action_vn_payroll_config"
+                  groups="vn_hr_payroll.group_vn_payroll_user_settings"
+                  sequence="10"/>
+
+        <menuitem id="menu_vn_hr_pit_tax_table"
+                  name="PIT Tax Table"
+                  parent="menu_vn_hr_payroll_configuration"
+                  action="action_vn_pit_tax_table"
+                  groups="vn_hr_payroll.group_vn_payroll_user_pit_table"
+                  sequence="20"/>
+
+        <menuitem id="menu_vn_freelancer_tax_table"
+                  name="Freelancer Tax Table"
+                  parent="menu_vn_hr_payroll_configuration"
+                  action="action_vn_freelancer_tax_table"
+                  groups="vn_hr_payroll.group_vn_payroll_user_freelancer_tax"
+                  sequence="25"/>
+
+        <!-- Salary Structure Types -->
+        <record id="action_vnpayroll_payroll_structure_type" model="ir.actions.act_window">
+            <field name="name">Salary Structure Types</field>
+            <field name="res_model">vnpayroll.payroll.structure.type</field>
+            <field name="view_mode">list,form</field>
+        </record>
+        <menuitem id="menu_vnpayroll_payroll_structure_type"
+                  name="Structure Types"
+                  parent="menu_vn_hr_payroll_configuration"
+                  action="action_vnpayroll_payroll_structure_type"
+                  groups="vn_hr_payroll.group_vn_payroll_user_structure_types"
+                  sequence="30"/>
+
+        <!-- Salary Structures -->
+        <record id="action_vnpayroll_payroll_structure" model="ir.actions.act_window">
+            <field name="name">Salary Structures</field>
+            <field name="res_model">vnpayroll.payroll.structure</field>
+            <field name="view_mode">list,form</field>
+        </record>
+        <menuitem id="menu_vnpayroll_payroll_structure"
+                  name="Structures"
+                  parent="menu_vn_hr_payroll_configuration"
+                  action="action_vnpayroll_payroll_structure"
+                  groups="vn_hr_payroll.group_vn_payroll_user_structures"
+                  sequence="40"/>
+
+        <!-- Salary Rule Categories -->
+        <record id="action_vnpayroll_salary_rule_category" model="ir.actions.act_window">
+            <field name="name">Salary Rule Categories</field>
+            <field name="res_model">vnpayroll.salary.rule.category</field>
+            <field name="view_mode">list,form</field>
+        </record>
+        <menuitem id="menu_vnpayroll_salary_rule_category"
+                  name="Rule Categories"
+                  parent="menu_vn_hr_payroll_configuration"
+                  action="action_vnpayroll_salary_rule_category"
+                  groups="vn_hr_payroll.group_vn_payroll_user_rule_categories"
+                  sequence="50"/>
+
+        <!-- Salary Rules -->
+        <record id="action_vnpayroll_salary_rule" model="ir.actions.act_window">
+            <field name="name">Salary Rules</field>
+            <field name="res_model">vnpayroll.salary.rule</field>
+            <field name="view_mode">list,form</field>
+        </record>
+        <menuitem id="menu_vnpayroll_salary_rule"
+                  name="Rules"
+                  parent="menu_vn_hr_payroll_configuration"
+                  action="action_vnpayroll_salary_rule"
+                  groups="vn_hr_payroll.group_vn_payroll_user_rules"
+                  sequence="60"/>
+
+        <!-- User Management Menu (Only for Managers) -->
+        <menuitem id="menu_vn_hr_payroll_user_management"
+                  name="User Management"
+                  parent="menu_vn_hr_payroll_root"
+                  groups="vn_hr_payroll.group_vn_payroll_manager"
+                  sequence="95"/>
+
+        <menuitem id="menu_vn_payroll_user_permission"
+                  name="User Permissions"
+                  parent="menu_vn_hr_payroll_user_management"
+                  action="action_vn_payroll_user_permission"
+                  groups="vn_hr_payroll.group_vn_payroll_manager"
+                  sequence="10"/>
+    </data>
+</odoo>

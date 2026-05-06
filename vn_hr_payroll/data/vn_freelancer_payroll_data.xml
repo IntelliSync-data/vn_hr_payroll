@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    <!-- noupdate="1" to prevent overriding on module update -->
+
+        <!-- Salary Structure for Freelancer/Contractor -->
+        <record id="vn_payroll_structure_freelancer" model="vnpayroll.payroll.structure">
+            <field name="name">Freelancer/Contractor Structure</field>
+            <field name="code">FREELANCER_STRUCT</field>
+            <field name="type_id" ref="vnpayroll_structure_type_freelancer"/>
+            <!-- <field name="country_id" ref="base.vn"/> -->
+            <!-- <field name="report_id" ref="hr_payroll.action_report_payslip"/> --> <!-- Commented out as hr_payroll is removed -->
+            <field name="rule_ids" eval="[
+                (4, ref('vnpayroll_rule_basic')),
+                (4, ref('vnpayroll_rule_gross')),
+                (4, ref('vnpayroll_rule_net'))
+                ]"/>
+            <field name="parent_id" eval="False"/>
+        </record>
+
+        <!-- Salary Rule for Freelancer PIT 10% -->
+        <!-- This rule is added to the structure later via its own struct_id field -->
+        <record id="vn_salary_rule_pit_freelancer" model="vnpayroll.salary.rule">
+            <field name="name">Freelancer Personal Income Tax (10%)</field>
+            <field name="sequence">150</field>
+            <field name="code">PIT_FREELANCER</field>
+            <field name="category_id" ref="vnpayroll_sarulecat_ded"/> <!-- Ensure vnpayroll_sarulecat_ded is defined in vn_payroll_base_data.xml -->
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = True</field>
+            <field name="amount_select">python</field>
+            <field name="amount_python_compute">
+if categories.GROSS:
+    result = -(categories.GROSS * 0.10)
+else:
+    result = 0.0
+            </field>
+            <!-- <field name="default_struct_id" ref="vn_payroll_structure_freelancer"/> -->
+            <!-- <field name="struct_id" ref="vnpayroll_structure_freelancer"/> -->
+            <field name="appears_on_payslip">True</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="payslip_download_error" name="Payslip Download Error">
+        <t t-call="web.layout">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <div class="alert alert-danger">
+                            <h3>Download Error</h3>
+                            <p><t t-esc="error_message"/></p>
+                        </div>
+                        <p class="mt-4">
+                            If you believe this is an error, please contact HR department.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>

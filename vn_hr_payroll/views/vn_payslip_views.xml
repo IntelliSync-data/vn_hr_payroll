@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Payslip Form View -->
+        <record id="vn_payslip_view_form" model="ir.ui.view">
+            <field name="name">vn.payslip.view.form</field>
+            <field name="model">vn.payslip</field>
+            <field name="arch" type="xml">
+                <form string="Payslip">
+                    <header>
+                        <button name="compute_sheet" string="Compute Sheet" type="object" class="oe_highlight" invisible="state not in ['draft']"/>
+                        <button name="action_payslip_verify" string="Verify" type="object" class="oe_highlight" invisible="state not in ['draft']"/>
+                        <button name="action_payslip_done" string="Confirm" type="object" class="oe_highlight" invisible="state not in ['verify']"/>
+                        <button name="action_payslip_cancel" string="Reject" type="object" invisible="state not in ['verify']"/>
+                        <button name="action_payslip_draft" string="Set to Draft" type="object" invisible="state not in ['cancel']"/>
+                        <button name="action_payslip_preview_payslip" string="Preview" type="object" invisible="state not in ['done']"/>
+                        <button name="action_payslip_send_email" string="Send Email" type="object" invisible="state not in ['done']"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,verify,done"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Payslip Name" readonly="state not in ['draft']"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="employee_id" readonly="state not in ['draft']" options="{'no_create': True, 'no_open': True}"/>
+                                <field name="contract_id" readonly="state not in ['draft']" options="{'no_create': True, 'no_open': True}" context="{'search_default_employee_id': employee_id}"/>
+                                <field name="company_id" groups="base.group_multi_company" readonly="state not in ['draft']"/>
+                            </group>
+                            <group>
+                                <field name="date_from" readonly="state not in ['draft']"/>
+                                <field name="date_to" readonly="state not in ['draft']"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Wage Information" name="wage_info">
+                                <field name="is_hourly" invisible="1"/>
+                                <group>
+                                    <group string="Time Off" name="time_off_group" invisible="is_hourly">
+                                        <field name="total_working_days" readonly="1"/>
+                                        <field name="pto_days" readonly="1"/>
+                                        <field name="unpaid_leave_days" readonly="1"/>
+                                        <field name="actual_working_days" readonly="1"/>
+                                        <field name="paid_working_days" readonly="1" class="oe_highlight"/>
+                                    </group>
+                                    <group string="Hours Worked" name="hours_worked_group" invisible="not is_hourly">
+                                        <field name="worked_hours" readonly="state not in ['draft']" help="Manual override - leave at 0 to auto-calculate from timesheet/attendance"/>
+                                    </group>
+                                    <group string="Wage">
+                                        <field name="basic_wage" readonly="state not in ['draft']"/>
+                                        <field name="allowances" readonly="state not in ['draft']"/>
+                                        <field name="gross_wage" readonly="1"/>
+                                    </group>
+                                </group>
+                                <group>
+                                    <group/>
+                                    <group string="Net Income">
+                                        <field name="total_insurance_employee"/>
+                                        <field name="pit"/>
+                                        <field name="net_income" class="oe_read_only oe_highlight"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Insurance" name="insurance">
+                                <group>
+                                    <group string="Employee Contribution">
+                                        <field name="si_employee"/>
+                                        <field name="hi_employee"/>
+                                        <field name="ui_employee"/>
+                                        <field name="total_insurance_employee" class="oe_read_only"/>
+                                    </group>
+                                    <group string="Company Contribution">
+                                        <field name="si_company"/>
+                                        <field name="hi_company"/>
+                                        <field name="ui_company"/>
+                                        <field name="total_insurance_company" class="oe_read_only"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Tax" name="tax">
+                                <group>
+                                    <group string="Personal Income Tax">
+                                        <field name="skip_pit" widget="boolean_toggle"/>
+                                        <field name="taxable_income"/>
+                                        <field name="pit"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Payslip Lines" name="payslip_lines">
+                                <field name="line_ids" widget="one2many" readonly="state not in ['draft']">
+                                </field>
+                            </page>
+                            <page string="Notes" name="notes">
+                                <field name="note" readonly="state not in ['draft']"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Payslip List View -->
+        <record id="vn_payslip_view_tree" model="ir.ui.view">
+            <field name="name">vn.payslip.view.list</field>
+            <field name="model">vn.payslip</field>
+            <field name="arch" type="xml">
+                <list string="Payslips" decoration-info="state == 'draft'" decoration-muted="state == 'cancel'" decoration-bf="state == 'done'">
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="gross_wage" sum="Total Gross"/>
+                    <field name="total_insurance_employee" sum="Total Insurance"/>
+                    <field name="pit" sum="Total PIT"/>
+                    <field name="net_income" sum="Total Net" class="oe_highlight"/>
+                    <field name="state"/>
+                    <field name="company_id" groups="base.group_multi_company"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Payslip Search View -->
+        <record id="vn_payslip_view_search" model="ir.ui.view">
+            <field name="name">vn.payslip.view.search</field>
+            <field name="model">vn.payslip</field>
+            <field name="arch" type="xml">
+                <search string="Search Payslips">
+                    <field name="name" string="Payslip"/>
+                    <field name="employee_id"/>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <filter string="Draft" name="draft" domain="[('state','=','draft')]"/>
+                    <filter string="Waiting" name="verify" domain="[('state','=','verify')]"/>
+                    <filter string="Done" name="done" domain="[('state','=','done')]"/>
+                    <separator/>
+                    <filter string="My Payslips" name="my_payslips" domain="[('employee_id.user_id', '=', uid)]"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Employee" name="employee" context="{'group_by':'employee_id'}"/>
+                        <filter string="Status" name="status" context="{'group_by':'state'}"/>
+                        <filter string="Company" name="company" context="{'group_by':'company_id'}" groups="base.group_multi_company"/>
+                        <filter string="Month" name="month" context="{'group_by':'date_from:month'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <!-- Payslip Action -->
+        <record id="action_vn_payslip" model="ir.actions.act_window">
+            <field name="name">Payslips</field>
+            <field name="res_model">vn.payslip</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="vn_payslip_view_search"/>
+            <field name="context">{"search_default_draft": 1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new payslip
+                </p>
+            </field>
+        </record>
+        
+        <!-- Payslip Line Views -->
+        <record id="vn_payslip_line_view_tree" model="ir.ui.view">
+            <field name="name">vn.payslip.line.view.list</field>
+            <field name="model">vn.payslip.line</field>
+            <field name="arch" type="xml">
+                <list string="Payslip Lines" editable="bottom">
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="amount"/>
+                </list>
+            </field>
+        </record>
+        
+        <record id="vn_payslip_line_view_form" model="ir.ui.view">
+            <field name="name">vn.payslip.line.view.form</field>
+            <field name="model">vn.payslip.line</field>
+            <field name="arch" type="xml">
+                <form string="Payslip Line">
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="amount"/>
+                        <field name="sequence"/>
+                        <field name="payslip_id"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <!-- Force Delete Server Action for List View -->
+        <record id="action_force_delete_payslips" model="ir.actions.server">
+            <field name="name">Force Delete</field>
+            <field name="model_id" ref="model_vn_payslip"/>
+            <field name="binding_model_id" ref="model_vn_payslip"/>
+            <field name="binding_view_types">list</field>
+            <field name="groups_id" eval="[(4, ref('base.group_system'))]"/>
+            <field name="state">code</field>
+            <field name="code">
+action = records.force_unlink_multi()
+</field>
+        </record>
+        
+        <!-- Force Delete Server Action for Form View -->
+        <record id="action_force_delete_payslip_form" model="ir.actions.server">
+            <field name="name">Force Delete</field>
+            <field name="model_id" ref="model_vn_payslip"/>
+            <field name="binding_model_id" ref="model_vn_payslip"/>
+            <field name="binding_view_types">form</field>
+            <field name="groups_id" eval="[(4, ref('base.group_system'))]"/>
+            <field name="state">code</field>
+            <field name="code">
+action = records.force_unlink()
+</field>
+        </record>
+    </data>
+</odoo>

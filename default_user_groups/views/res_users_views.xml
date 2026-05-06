@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Add default groups information to user form -->
+        <record id="view_users_form_inherit" model="ir.ui.view">
+            <field name="name">res.users.form.inherit.default.groups</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='access_rights']" position="inside">
+                    <group string="Default Groups Info" groups="base.group_system">
+                        <div class="alert alert-info" role="alert">
+                            <strong>Default User Groups:</strong>
+                            <p>New users are automatically assigned to configured default groups. 
+                               You can change the default groups in Settings → General Settings → Users → Default User Groups.</p>
+                        </div>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

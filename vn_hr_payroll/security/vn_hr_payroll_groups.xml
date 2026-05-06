@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Custom Category for Vietnam Payroll -->
+        <record id="module_category_vn_payroll" model="ir.module.category">
+            <field name="name">Vietnam Payroll</field>
+            <field name="description">Access rights for Vietnam Payroll module</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <!-- Base User Group -->
+        <record id="group_vn_payroll_user" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="module_category_vn_payroll"/>
+        </record>
+
+        <!-- Sub-permission groups for each menu (hidden from UI, managed via User Permissions) -->
+        <record id="group_vn_payroll_user_payslips" model="res.groups">
+            <field name="name">VN Payroll: Payslips</field>
+            <field name="implied_ids" eval="[(4, ref('group_vn_payroll_user'))]"/>
+        </record>
+
+        <record id="group_vn_payroll_user_settings" model="res.groups">
+            <field name="name">VN Payroll: Payroll Settings</field>
+            <field name="implied_ids" eval="[(4, ref('group_vn_payroll_user'))]"/>
+        </record>
+
+        <record id="group_vn_payroll_user_pit_table" model="res.groups">
+            <field name="name">VN Payroll: PIT Tax Table</field>
+            <field name="implied_ids" eval="[(4, ref('group_vn_payroll_user'))]"/>
+        </record>
+
+        <record id="group_vn_payroll_user_structure_types" model="res.groups">
+            <field name="name">VN Payroll: Structure Types</field>
+            <field name="implied_ids" eval="[(4, ref('group_vn_payroll_user'))]"/>
+        </record>
+
+        <record id="group_vn_payroll_user_freelancer_tax" model="res.groups">
+            <field name="name">VN Payroll: Freelancer Tax Table</field>
+            <field name="implied_ids" eval="[(4, ref('group_vn_payroll_user'))]"/>
+        </record>
+
+        <record id="group_vn_payroll_user_structures" model="res.groups">
+            <field name="name">VN Payroll: Structures</field>
+            <field name="implied_ids" eval="[(4, ref('group_vn_payroll_user'))]"/>
+        </record>
+
+        <record id="group_vn_payroll_user_rule_categories" model="res.groups">
+            <field name="name">VN Payroll: Rule Categories</field>
+            <field name="implied_ids" eval="[(4, ref('group_vn_payroll_user'))]"/>
+        </record>
+
+        <record id="group_vn_payroll_user_rules" model="res.groups">
+            <field name="name">VN Payroll: Rules</field>
+            <field name="implied_ids" eval="[(4, ref('group_vn_payroll_user'))]"/>
+        </record>
+
+        <record id="group_vn_payroll_user_schedules" model="res.groups">
+            <field name="name">VN Payroll: Payslip Schedules</field>
+            <field name="implied_ids" eval="[(4, ref('group_vn_payroll_user'))]"/>
+        </record>
+
+        <!-- Manager Group (has all permissions) -->
+        <record id="group_vn_payroll_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="module_category_vn_payroll"/>
+            <field name="implied_ids" eval="[
+                (4, ref('group_vn_payroll_user')),
+                (4, ref('group_vn_payroll_user_payslips')),
+                (4, ref('group_vn_payroll_user_schedules')),
+                (4, ref('group_vn_payroll_user_settings')),
+                (4, ref('group_vn_payroll_user_pit_table')),
+                (4, ref('group_vn_payroll_user_structure_types')),
+                (4, ref('group_vn_payroll_user_freelancer_tax')),
+                (4, ref('group_vn_payroll_user_structures')),
+                (4, ref('group_vn_payroll_user_rule_categories')),
+                (4, ref('group_vn_payroll_user_rules'))
+            ]"/>
+        </record>
+    </data>
+</odoo>

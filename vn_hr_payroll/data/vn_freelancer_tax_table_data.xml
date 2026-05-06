@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Freelancer Tax Table Data -->
+        <record id="vn_freelancer_tax_table_1" model="vn.freelancer.tax.table">
+            <field name="name">0 - 2,000,000 (10%)</field>
+            <field name="income_from">0</field>
+            <field name="income_to">2000000</field>
+            <field name="tax_rate">10.0</field>
+            <field name="fixed_deduction">0</field>
+        </record>
+        
+        <record id="vn_freelancer_tax_table_2" model="vn.freelancer.tax.table">
+            <field name="name">2,000,000+ (20%)</field>
+            <field name="income_from">2000000</field>
+            <field name="income_to">999999999</field>
+            <field name="tax_rate">20.0</field>
+            <field name="fixed_deduction">200000</field>
+        </record>
+    </data>
+</odoo>

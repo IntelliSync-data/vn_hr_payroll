@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- User Permission Form View -->
+        <record id="vn_payroll_user_permission_view_form" model="ir.ui.view">
+            <field name="name">vn.payroll.user.permission.view.form</field>
+            <field name="model">vn.payroll.user.permission</field>
+            <field name="arch" type="xml">
+                <form string="User Permissions">
+                    <sheet>
+                        <group>
+                            <field name="user_id" options="{'no_create': True}"/>
+                        </group>
+                        <group string="Menu Permissions">
+                            <group>
+                                <field name="can_view_payslips"/>
+                                <field name="can_view_schedules"/>
+                                <field name="can_view_settings"/>
+                                <field name="can_view_pit_table"/>
+                                <field name="can_view_structure_types"/>
+                            </group>
+                            <group>
+                                <field name="can_view_freelancer_tax"/>
+                                <field name="can_view_structures"/>
+                                <field name="can_view_rule_categories"/>
+                                <field name="can_view_rules"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- User Permission List View -->
+        <record id="vn_payroll_user_permission_view_tree" model="ir.ui.view">
+            <field name="name">vn.payroll.user.permission.view.list</field>
+            <field name="model">vn.payroll.user.permission</field>
+            <field name="arch" type="xml">
+                <list string="User Permissions" editable="bottom">
+                    <field name="user_id" options="{'no_create': True}"/>
+                    <field name="can_view_payslips" widget="boolean_toggle"/>
+                    <field name="can_view_schedules" widget="boolean_toggle"/>
+                    <field name="can_view_settings" widget="boolean_toggle"/>
+                    <field name="can_view_pit_table" widget="boolean_toggle"/>
+                    <field name="can_view_structure_types" widget="boolean_toggle"/>
+                    <field name="can_view_freelancer_tax" widget="boolean_toggle"/>
+                    <field name="can_view_structures" widget="boolean_toggle"/>
+                    <field name="can_view_rule_categories" widget="boolean_toggle"/>
+                    <field name="can_view_rules" widget="boolean_toggle"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- User Permission Search View -->
+        <record id="vn_payroll_user_permission_view_search" model="ir.ui.view">
+            <field name="name">vn.payroll.user.permission.view.search</field>
+            <field name="model">vn.payroll.user.permission</field>
+            <field name="arch" type="xml">
+                <search string="Search User Permissions">
+                    <field name="user_id"/>
+                    <filter string="Has Payslips Access" name="has_payslips" domain="[('can_view_payslips','=',True)]"/>
+                    <filter string="Has Settings Access" name="has_settings" domain="[('can_view_settings','=',True)]"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- User Permission Action -->
+        <record id="action_vn_payroll_user_permission" model="ir.actions.act_window">
+            <field name="name">User Permissions</field>
+            <field name="res_model">vn.payroll.user.permission</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="vn_payroll_user_permission_view_search"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Add users and set their permissions
+                </p>
+                <p>
+                    Click "Create" to add a user and configure which menus they can access.
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

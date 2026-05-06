@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Default PIT Tax Table Data -->
+        <record id="vn_pit_tax_table_1" model="vn.pit.tax.table">
+            <field name="income_from">0</field>
+            <field name="income_to">5000000</field>
+            <field name="tax_rate">5</field>
+            <field name="fixed_deduction">0</field>
+        </record>
+        
+        <record id="vn_pit_tax_table_2" model="vn.pit.tax.table">
+            <field name="income_from">5000000</field>
+            <field name="income_to">10000000</field>
+            <field name="tax_rate">10</field>
+            <field name="fixed_deduction">250000</field>
+        </record>
+        
+        <record id="vn_pit_tax_table_3" model="vn.pit.tax.table">
+            <field name="income_from">10000000</field>
+            <field name="income_to">18000000</field>
+            <field name="tax_rate">15</field>
+            <field name="fixed_deduction">750000</field>
+        </record>
+        
+        <record id="vn_pit_tax_table_4" model="vn.pit.tax.table">
+            <field name="income_from">18000000</field>
+            <field name="income_to">32000000</field>
+            <field name="tax_rate">20</field>
+            <field name="fixed_deduction">1650000</field>
+        </record>
+        
+        <record id="vn_pit_tax_table_5" model="vn.pit.tax.table">
+            <field name="income_from">32000000</field>
+            <field name="income_to">52000000</field>
+            <field name="tax_rate">25</field>
+            <field name="fixed_deduction">3250000</field>
+        </record>
+        
+        <record id="vn_pit_tax_table_6" model="vn.pit.tax.table">
+            <field name="income_from">52000000</field>
+            <field name="income_to">80000000</field>
+            <field name="tax_rate">30</field>
+            <field name="fixed_deduction">5850000</field>
+        </record>
+        
+        <record id="vn_pit_tax_table_7" model="vn.pit.tax.table">
+            <field name="income_from">80000000</field>
+            <field name="income_to">999999999999</field>
+            <field name="tax_rate">35</field>
+            <field name="fixed_deduction">9850000</field>
+        </record>
+    </data>
+</odoo>

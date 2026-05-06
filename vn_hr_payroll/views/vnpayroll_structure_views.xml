@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Payroll Structure Tree View -->
+        <record id="vnpayroll_payroll_structure_view_list" model="ir.ui.view">
+            <field name="name">vnpayroll.payroll.structure.view.list</field>
+            <field name="model">vnpayroll.payroll.structure</field>
+            <field name="arch" type="xml">
+                <list string="Salary Structures">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="type_id"/>
+                    <field name="schedule_pay"/>
+                    <field name="active" widget="boolean_toggle"/>
+                    <field name="company_id" groups="base.group_multi_company"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Payroll Structure Form View -->
+        <record id="vnpayroll_payroll_structure_view_form" model="ir.ui.view">
+            <field name="name">vnpayroll.payroll.structure.view.form</field>
+            <field name="model">vnpayroll.payroll.structure</field>
+            <field name="arch" type="xml">
+                <form string="Salary Structure">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+                                <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+                            </button>
+                        </div>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1><field name="name" placeholder="e.g. Base for new structures"/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="code"/>
+                                <field name="type_id"/>
+                            </group>
+                            <group>
+                                <field name="parent_id" domain="[('type_id', '=', type_id)]" context="{'default_type_id': type_id}"/>
+                                <field name="schedule_pay"/>
+                                <field name="company_id" groups="base.group_multi_company"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Salary Rules" name="salary_rules">
+                                <field name="rule_ids" nolabel="1">
+                                    <list editable="bottom">
+                                        <field name="sequence"/>
+                                        <field name="name"/>
+                                        <field name="code"/>
+                                        <field name="category_id"/>
+                                        <field name="condition_select"/>
+                                        <field name="amount_select"/>
+                                        <field name="active" widget="boolean_toggle"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

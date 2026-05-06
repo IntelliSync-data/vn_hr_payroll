@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Second Job Payroll Structure -->
+        <record id="vnpayroll_structure_second_job" model="vnpayroll.payroll.structure">
+            <field name="name">Second Job Structure</field>
+            <field name="code">SECOND_JOB</field>
+            <field name="type_id" ref="vnpayroll_structure_type_second_job"/>
+            <field name="rule_ids" eval="[
+                (4, ref('vnpayroll_rule_basic')),
+                (4, ref('vnpayroll_rule_gross')),
+                (4, ref('vnpayroll_rule_net'))
+            ]"/>
+        </record>
+
+        <!-- Second Job Specific Rules - No PIT, No Insurance -->
+        <record id="vnpayroll_rule_second_job_basic" model="vnpayroll.salary.rule">
+            <field name="name">Second Job Basic Salary</field>
+            <field name="code">SJ_BASIC</field>
+            <field name="category_id" ref="vnpayroll_category_basic"/>
+            <field name="sequence">5</field>
+            <field name="condition_select">none</field>
+            <field name="amount_select">python</field>
+            <field name="amount_python_compute">result = payslip.basic_wage</field>
+            <field name="struct_id" ref="vnpayroll_structure_second_job"/>
+        </record>
+
+        <record id="vnpayroll_rule_second_job_gross" model="vnpayroll.salary.rule">
+            <field name="name">Second Job Gross</field>
+            <field name="code">SJ_GROSS</field>
+            <field name="category_id" ref="vnpayroll_category_gross"/>
+            <field name="sequence">100</field>
+            <field name="condition_select">none</field>
+            <field name="amount_select">python</field>
+            <field name="amount_python_compute">result = payslip.gross_wage</field>
+            <field name="struct_id" ref="vnpayroll_structure_second_job"/>
+        </record>
+
+        <record id="vnpayroll_rule_second_job_net" model="vnpayroll.salary.rule">
+            <field name="name">Second Job Net</field>
+            <field name="code">SJ_NET</field>
+            <field name="category_id" ref="vnpayroll_category_net"/>
+            <field name="sequence">200</field>
+            <field name="condition_select">none</field>
+            <field name="amount_select">python</field>
+            <!-- No deductions for Second Job, so Net = Gross -->
+            <field name="amount_python_compute">result = categories.SJ_GROSS</field>
+            <field name="struct_id" ref="vnpayroll_structure_second_job"/>
+        </record>
+    </data>
+</odoo>

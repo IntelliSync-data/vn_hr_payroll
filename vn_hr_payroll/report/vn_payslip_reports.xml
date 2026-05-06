@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Custom Paperformat for Payslip with reduced margins -->
+    <record id="paperformat_vn_payslip" model="report.paperformat">
+        <field name="name">VN Payslip Paperformat</field>
+        <field name="default" eval="False"/>
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">3</field>
+        <field name="margin_left">7</field>
+        <field name="margin_right">7</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">5</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <!-- Payslip Report -->
+    <record id="action_report_vn_payslip" model="ir.actions.report">
+        <field name="name">Payslip</field>
+        <field name="model">vn.payslip</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">vn_hr_payroll.report_vn_payslip</field>
+        <field name="report_file">vn_hr_payroll.report_vn_payslip</field>
+        <field name="binding_model_id" ref="model_vn_payslip"/>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="paperformat_vn_payslip"/>
+    </record>
+</odoo>

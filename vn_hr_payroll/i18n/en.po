@@ -1,0 +1,2190 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vn_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-28 14:32+0000\n"
+"PO-Revision-Date: 2025-10-28 14:32+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en_US\n"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid ""
+"# Available variables: categories, payslip, employee, contract, rules, "
+"result, result_qty, result_rate\\n# Enter a Python expression that returns a "
+"boolean. Example: result = rules.NET > 1000"
+msgstr ""
+"# Available variables: categories, payslip, employee, contract, rules, "
+"result, result_qty, result_rate\\n# Enter a Python expression that returns a "
+"boolean. Example: result = rules.NET > 1000"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid ""
+"# Available variables: categories, payslip, employee, contract, rules, "
+"result, result_qty, result_rate\\n# Enter a Python expression that returns a "
+"float. Example: result = contract.wage * 0.10"
+msgstr ""
+"# Available variables: categories, payslip, employee, contract, rules, "
+"result, result_qty, result_rate\\n# Enter a Python expression that returns a "
+"float. Example: result = contract.wage * 0.10"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__state
+msgid ""
+"* When the payslip is created the status is 'Draft'\n"
+"                \n"
+"* If the payslip is under verification, the status is 'Waiting'\n"
+"                \n"
+"* If the payslip is confirmed then status is set to 'Done'\n"
+"                \n"
+"* When user cancel payslip the status is 'Rejected'"
+msgstr ""
+"* When the payslip is created the status is 'Draft'\n"
+"                \n"
+"* If the payslip is under verification, the status is 'Waiting'\n"
+"                \n"
+"* If the payslip is confirmed then status is set to 'Done'\n"
+"                \n"
+"* When user cancel payslip the status is 'Rejected'"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Allowances</strong>"
+msgstr "<strong>Allowances</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Amount (VND)</strong>"
+msgstr "<strong>Amount (VND)</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Basic Wage</strong>"
+msgstr "<strong>Basic Wage</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Company:</strong>"
+msgstr "<strong>Company:</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Description</strong>"
+msgstr "<strong>Description</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Employee:</strong>"
+msgstr "<strong>Employee:</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Gross Wage</strong>"
+msgstr "<strong>Gross Wage</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Hourly/Monthly Rate</strong>"
+msgstr "<strong>Hourly/Monthly Rate</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Item</strong>"
+msgstr "<strong>Item</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Net Income</strong>"
+msgstr "<strong>Net Income</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Period:</strong>"
+msgstr "<strong>Period:</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Personal Income Tax</strong>"
+msgstr "<strong>Personal Income Tax</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Reference:</strong>"
+msgstr "<strong>Reference:</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Total Insurance (Employee)</strong>"
+msgstr "<strong>Total Insurance (Employee)</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "<strong>Worked Hours</strong>"
+msgstr "<strong>Worked Hours</strong>"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid ""
+"<strong>💡 Pro Tip:</strong> Use the template variables above to create "
+"dynamic, personalized emails just like MailChimp!\n"
+"                                    Your email will combine Header + Content "
+"+ Footer automatically."
+msgstr ""
+"<strong>💡 Pro Tip:</strong> Use the template variables above to create "
+"dynamic, personalized emails just like MailChimp!\n"
+"                                    Your email will combine Header + Content "
+"+ Footer automatically."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid ""
+"<strong>📄 PDF Templates:</strong> Design your payslip PDF layout with "
+"Header + Content + Footer templates.\n"
+"                                    The Content template includes QWeb "
+"syntax for dynamic payslip lines rendering."
+msgstr ""
+"<strong>📄 PDF Templates:</strong> Design your payslip PDF layout with "
+"Header + Content + Footer templates.\n"
+"                                    The Content template includes QWeb "
+"syntax for dynamic payslip lines rendering."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_needaction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_needaction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_needaction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_needaction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_needaction
+msgid "Action Needed"
+msgstr "Action Needed"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__active
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__active
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__active
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__active
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__active
+msgid "Active"
+msgstr "Active"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_ids
+msgid "Activities"
+msgstr "Activities"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_exception_decoration
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_exception_decoration
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_exception_decoration
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_exception_decoration
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Activity Exception Decoration"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_state
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_state
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_state
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_state
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_state
+msgid "Activity State"
+msgstr "Activity State"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_type_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_type_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_type_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_type_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Activity Type Icon"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__actual_working_days
+msgid "Actual Working Days"
+msgstr "Actual Working Days"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__actual_working_days
+msgid "Actual days worked (Total - PTO - Unpaid)"
+msgstr "Actual days worked (Total - PTO - Unpaid)"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_form
+msgid "Additional notes about this category..."
+msgstr "Additional notes about this category..."
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_allowances
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__allowances
+msgid "Allowances"
+msgstr "Allowances"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__condition_select__none
+msgid "Always True"
+msgstr "Always True"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__amount
+msgid "Amount"
+msgstr "Amount"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Amount Computation"
+msgstr "Amount Computation"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__amount_select
+msgid "Amount Type"
+msgstr "Amount Type"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__annually
+msgid "Annually"
+msgstr "Annually"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__appears_on_payslip
+msgid "Appears on Payslip"
+msgstr "Appears on Payslip"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_search
+msgid "Archived"
+msgstr "Archived"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip_force_delete_wizard.py:0
+msgid "Are you sure you want to force delete %s payslips?"
+msgstr "Are you sure you want to force delete %s payslips?"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip_force_delete_wizard.py:0
+msgid "Are you sure you want to force delete this payslip?"
+msgstr "Are you sure you want to force delete this payslip?"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_ir_attachment
+msgid "Attachment"
+msgstr "Attachment"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_attachment_count
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_attachment_count
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_attachment_count
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_attachment_count
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_attachment_count
+msgid "Attachment Count"
+msgstr "Attachment Count"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__email_template_help
+msgid "Available Template Variables"
+msgstr "Available Template Variables"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_basic_wage
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__basic_wage
+msgid "Basic Wage"
+msgstr "Basic Wage"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_basic_wage
+msgid "Basic wage amount in VND"
+msgstr "Basic wage amount in VND"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__bi-monthly
+msgid "Bi-monthly"
+msgstr "Bi-monthly"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__bi-weekly
+msgid "Bi-weekly"
+msgstr "Bi-weekly"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payroll_cc_email
+msgid "CC Email for Payroll"
+msgstr "CC Email for Payroll"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payroll_cc_email
+msgid "From Email for Payroll"
+msgstr "From Email for Payroll"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payroll_cc_email
+msgid "Email address to use as sender when sending payroll emails. If empty, system default email will be used."
+msgstr "Email address to use as sender when sending payroll emails. If empty, system default email will be used."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.view_vn_payslip_force_delete_wizard_form
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__category_id
+msgid "Category"
+msgstr "Category"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__children_ids
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_form
+msgid "Child Categories"
+msgstr "Child Categories"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__code
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__code
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__code
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__code
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__code
+msgid "Code"
+msgstr "Code"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__company_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__company_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__company_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__company_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__company_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__company_id
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_search
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Company"
+msgstr "Company"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Company Contribution"
+msgstr "Company Contribution"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Computation"
+msgstr "Computation"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Compute Sheet"
+msgstr "Compute Sheet"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__condition_select
+msgid "Condition Based on"
+msgstr "Condition Based on"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Conditions"
+msgstr "Conditions"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_payroll_configuration
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.actions.act_window,help:vn_hr_payroll.action_vn_payroll_config
+msgid "Configure Vietnam Payroll settings"
+msgstr "Configure Vietnam Payroll settings"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Confirm"
+msgstr "Confirm"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.view_vn_payslip_force_delete_wizard_form
+msgid "Confirm Force Delete"
+msgstr "Confirm Force Delete"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_payslip_force_delete_wizard
+msgid "Confirm Force Delete Payslips"
+msgstr "Confirm Force Delete Payslips"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__confirmation_message
+msgid "Confirmation"
+msgstr "Confirmation"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Content Template"
+msgstr "Content Template"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__contract_id
+msgid "Contract"
+msgstr "Contract"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__country_id
+msgid "Country"
+msgstr "Country"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.actions.act_window,help:vn_hr_payroll.action_vn_pit_tax_table
+msgid "Create a new PIT tax bracket"
+msgstr "Create a new PIT tax bracket"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.actions.act_window,help:vn_hr_payroll.action_vn_freelancer_tax_table
+msgid "Create a new freelancer tax table entry"
+msgstr "Create a new freelancer tax table entry"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.actions.act_window,help:vn_hr_payroll.action_vn_payslip
+msgid "Create a new payslip"
+msgstr "Create a new payslip"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__create_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__create_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__create_date
+msgid "Created on"
+msgstr "Created on"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__date_from
+msgid "Date From"
+msgstr "Date From"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__date_to
+msgid "Date To"
+msgstr "Date To"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__paid_working_days
+msgid "Days used for salary calculation (Actual + PTO)"
+msgstr "Days used for salary calculation (Actual + PTO)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_dependant_deduction
+msgid "Deduction amount per dependant in VND"
+msgstr "Deduction amount per dependant in VND"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__default_struct_id
+msgid "Default Salary Structure"
+msgstr "Default Salary Structure"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__default_resource_calendar_id
+msgid "Default Working Hours"
+msgstr "Default Working Hours"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__default_struct_id
+msgid "Default salary structure used for new contracts."
+msgstr "Default salary structure used for new contracts."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.actions.act_window,help:vn_hr_payroll.action_vn_freelancer_tax_table
+msgid ""
+"Define tax rates and fixed deductions for different income ranges for "
+"freelancers."
+msgstr ""
+"Define tax rates and fixed deductions for different income ranges for "
+"freelancers."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__schedule_pay
+msgid "Defines the frequency of pay slips."
+msgstr "Defines the frequency of pay slips."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_dependant_deduction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_dependant_deduction
+msgid "Dependant Deduction"
+msgstr "Dependant Deduction"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__note
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__note
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__note
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Description"
+msgstr "Description"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Description of the rule..."
+msgstr "Description of the rule..."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__display_name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vn_payslip__state__done
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Done"
+msgstr "Done"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.payslip_download_error
+msgid "Download Error"
+msgstr "Download Error"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vn_payslip__state__draft
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Draft"
+msgstr "Draft"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Email Configuration"
+msgstr "Email Configuration"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__email_content_template
+msgid "Email Content Template"
+msgstr "Email Content Template"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__email_footer_template
+msgid "Email Footer Template"
+msgstr "Email Footer Template"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__email_header_template
+msgid "Email Header Template"
+msgstr "Email Header Template"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Email Setup"
+msgstr "Email Setup"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__email_subject_template
+msgid "Email Subject Template"
+msgstr "Email Subject Template"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Email Template Design (MailChimp Style)"
+msgstr "Email Template Design (MailChimp Style)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__payroll_cc_email
+msgid "Email address to CC when sending payroll emails to employees"
+msgstr "Email address to CC when sending payroll emails to employees"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__email_subject_template
+msgid "Email subject template. Use {{variable}} for dynamic data."
+msgstr "Email subject template. Use {{variable}} for dynamic data."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__employee_id
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Employee"
+msgstr "Employee"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr "Employee Contract"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Employee Contribution"
+msgstr "Employee Contribution"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_pit_tax_table__income_to
+msgid "Ending income amount for this tax bracket"
+msgstr "Ending income amount for this tax bracket"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__amount_fix
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__amount_select__fix
+msgid "Fixed Amount"
+msgstr "Fixed Amount"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__fixed_deduction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__fixed_deduction
+msgid "Fixed Deduction"
+msgstr "Fixed Deduction"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_pit_tax_table__fixed_deduction
+msgid "Fixed deduction amount for this bracket"
+msgstr "Fixed deduction amount for this bracket"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_follower_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_follower_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_follower_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_follower_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_follower_ids
+msgid "Followers"
+msgstr "Followers"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_partner_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_partner_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_partner_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_partner_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Followers (Partners)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__activity_type_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_type_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_type_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__activity_type_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font awesome icon e.g. fa-tasks"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Footer Template"
+msgstr "Footer Template"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__amount_percentage
+msgid "For Percentage amount type"
+msgstr "For Percentage amount type"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.server,name:vn_hr_payroll.action_force_delete_payslip_form
+#: model:ir.actions.server,name:vn_hr_payroll.action_force_delete_payslips
+msgid "Force Delete"
+msgstr "Force Delete"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vn_freelancer_tax_table
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_freelancer_tax_table
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_list
+msgid "Freelancer Tax Table"
+msgstr "Freelancer Tax Table"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__gross_wage
+msgid "Gross Wage"
+msgstr "Gross Wage"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_search
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Group By"
+msgstr "Group By"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__hi_company
+msgid "HI (Company)"
+msgstr "HI (Company)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__hi_employee
+msgid "HI (Employee)"
+msgstr "HI (Employee)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_hi_rate_company
+msgid "HI Rate (Company)"
+msgstr "HI Rate (Company)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_hi_rate_employee
+msgid "HI Rate (Employee)"
+msgstr "HI Rate (Employee)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_hi_salary_cap
+msgid "HI Salary Cap"
+msgstr "HI Salary Cap"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__email_content_template
+msgid "HTML template for email content. Use {{variable}} for dynamic data."
+msgstr "HTML template for email content. Use {{variable}} for dynamic data."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__email_footer_template
+msgid "HTML template for email footer. Use {{variable}} for dynamic data."
+msgstr "HTML template for email footer. Use {{variable}} for dynamic data."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__email_header_template
+msgid "HTML template for email header. Use {{variable}} for dynamic data."
+msgstr "HTML template for email header. Use {{variable}} for dynamic data."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__payslip_content_template
+msgid ""
+"HTML template for payslip content (PDF). Use {{variable}} for dynamic data "
+"and QWeb syntax."
+msgstr ""
+"HTML template for payslip content (PDF). Use {{variable}} for dynamic data "
+"and QWeb syntax."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__payslip_footer_template
+msgid ""
+"HTML template for payslip footer (PDF). Use {{variable}} for dynamic data."
+msgstr ""
+"HTML template for payslip footer (PDF). Use {{variable}} for dynamic data."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__payslip_header_template
+msgid ""
+"HTML template for payslip header (PDF). Use {{variable}} for dynamic data."
+msgstr ""
+"HTML template for payslip header (PDF). Use {{variable}} for dynamic data."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__has_message
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__has_message
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__has_message
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__has_message
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__has_message
+msgid "Has Message"
+msgstr "Has Message"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Header Template"
+msgstr "Header Template"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Health Insurance (Employee)"
+msgstr "Health Insurance (Employee)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_hi_rate_company
+msgid "Health Insurance rate for company (%)"
+msgstr "Health Insurance rate for company (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_hi_rate_employee
+msgid "Health Insurance rate for employee (%)"
+msgstr "Health Insurance rate for employee (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__id
+msgid "ID"
+msgstr "ID"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_exception_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_exception_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_exception_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_exception_icon
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_exception_icon
+msgid "Icon"
+msgstr "Icon"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__activity_exception_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_exception_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_exception_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__activity_exception_icon
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icon to indicate an exception activity."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__message_needaction
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__message_needaction
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_needaction
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__message_needaction
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "If checked, new messages require your attention."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__message_has_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__message_has_sms_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_sms_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_sms_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_sms_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_error
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "If checked, some messages have a delivery error."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__active
+msgid ""
+"If the active field is set to false, it will allow you to hide the salary "
+"rule without removing it."
+msgstr ""
+"If the active field is set to false, it will allow you to hide the salary "
+"rule without removing it."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__active
+msgid ""
+"If the active field is set to false, it will allow you to hide the salary "
+"structure without removing it."
+msgstr ""
+"If the active field is set to false, it will allow you to hide the salary "
+"structure without removing it."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.payslip_download_error
+msgid "If you believe this is an error, please contact HR department."
+msgstr "If you believe this is an error, please contact HR department."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__income_from
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__income_from
+msgid "Income From"
+msgstr "Income From"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_pit_tax_table.py:0
+msgid "Income From must be less than Income To"
+msgstr "Income From must be less than Income To"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__income_to
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__income_to
+msgid "Income To"
+msgstr "Income To"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Information"
+msgstr "Information"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Insurance"
+msgstr "Insurance"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Insurance Caps"
+msgstr "Insurance Caps"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Insurance Rates"
+msgstr "Insurance Rates"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_insurance_wage
+msgid "Insurance Wage"
+msgstr "Insurance Wage"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payroll_config.py:0
+msgid "Insurance rates must be between 0 and 100."
+msgstr "Insurance rates must be between 0 and 100."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_is_follower
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_is_follower
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_is_follower
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_is_follower
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_is_follower
+msgid "Is Follower"
+msgstr "Is Follower"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__is_freelancer
+msgid "Is Freelancer"
+msgstr "Is Freelancer"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__write_uid
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__write_uid
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__write_date
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__write_date
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_hi_salary_cap
+msgid "Maximum salary for Health Insurance contribution"
+msgstr "Maximum salary for Health Insurance contribution"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_si_salary_cap
+msgid "Maximum salary for Social Insurance contribution"
+msgstr "Maximum salary for Social Insurance contribution"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_ui_salary_cap
+msgid "Maximum salary for Unemployment Insurance contribution"
+msgstr "Maximum salary for Unemployment Insurance contribution"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_has_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_error
+msgid "Message Delivery error"
+msgstr "Message Delivery error"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_ids
+msgid "Messages"
+msgstr "Messages"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Month"
+msgstr "Month"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__monthly
+msgid "Monthly"
+msgstr "Monthly"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__my_activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__my_activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__my_activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__my_activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "My Activity Deadline"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "My Payslips"
+msgstr "My Payslips"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__name
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__name
+msgid "Name"
+msgstr "Name"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__payslip_name
+msgid "Name to be used for payslips generated from this structure."
+msgstr "Name to be used for payslips generated from this structure."
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__net_income
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Net Income"
+msgstr "Net Income"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Net income cannot be negative"
+msgstr "Net income cannot be negative"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "New Payslip"
+msgstr "New Payslip"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_calendar_event_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_calendar_event_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_calendar_event_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_calendar_event_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Next Activity Calendar Event"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_date_deadline
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Next Activity Deadline"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_summary
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_summary
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_summary
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_summary
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_summary
+msgid "Next Activity Summary"
+msgstr "Next Activity Summary"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_type_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_type_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_type_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_type_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_type_id
+msgid "Next Activity Type"
+msgstr "Next Activity Type"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip_force_delete_wizard.py:0
+msgid "No payslips selected for force delete."
+msgstr "No payslips selected for force delete."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__note
+msgid "Note"
+msgstr "Note"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_form
+msgid "Notes"
+msgstr "Notes"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_needaction_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_needaction_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_needaction_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_needaction_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Number of Actions"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_number_of_dependants
+msgid "Number of Dependants"
+msgstr "Number of Dependants"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/hr_contract.py:0
+msgid "Number of dependants cannot be negative."
+msgstr "Number of dependants cannot be negative."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_number_of_dependants
+msgid "Number of dependants for tax calculation"
+msgstr "Number of dependants for tax calculation"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_has_error_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_error_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_error_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_error_counter
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_error_counter
+msgid "Number of errors"
+msgstr "Number of errors"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__worked_hours
+msgid "Number of hours worked by the freelancer"
+msgstr "Number of hours worked by the freelancer"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__message_needaction_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__message_needaction_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_needaction_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__message_needaction_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Number of messages requiring action"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__message_has_error_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_error_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_error_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_error_counter
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Number of messages with delivery error"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__pto_days
+msgid "Number of paid leave days (Ngày nghỉ có lương)"
+msgstr "Number of paid leave days (Ngày nghỉ có lương)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__unpaid_leave_days
+msgid "Number of unpaid leave days (Nghỉ không lương)"
+msgstr "Number of unpaid leave days (Nghỉ không lương)"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: code:addons/vn_hr_payroll/models/vn_payslip_force_delete_wizard.py:0
+msgid "Only administrators can force delete payslips"
+msgstr "Only administrators can force delete payslips"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_ir_attachment__pdf_password
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_product_document__pdf_password
+msgid "PDF Password"
+msgstr "PDF Password"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__pit
+msgid "PIT"
+msgstr "PIT"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_pit_tax_table_view_form
+msgid "PIT Tax Bracket"
+msgstr "PIT Tax Bracket"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_pit_tax_table_view_tree
+msgid "PIT Tax Brackets"
+msgstr "PIT Tax Brackets"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vn_pit_tax_table
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_pit_tax_table
+msgid "PIT Tax Table"
+msgstr "PIT Tax Table"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__pto_days
+msgid "Paid Time Off Days"
+msgstr "Paid Time Off Days"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__paid_working_days
+msgid "Paid Working Days"
+msgstr "Paid Working Days"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__parent_id
+msgid "Parent Category"
+msgstr "Parent Category"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__parent_id
+msgid "Parent Structure"
+msgstr "Parent Structure"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__partner_id
+msgid "Partner for this salary rule, if applicable."
+msgstr "Partner for this salary rule, if applicable."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_ir_attachment__pdf_password
+#: model:ir.model.fields,help:vn_hr_payroll.field_product_document__pdf_password
+msgid "Password to open encrypted PDF file (for payslip)"
+msgstr "Password to open encrypted PDF file (for payslip)"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vn_payroll_config
+msgid "Payroll Configuration"
+msgstr "Payroll Configuration"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_payroll_config
+msgid "Payroll Settings"
+msgstr "Payroll Settings"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.report,name:vn_hr_payroll.action_report_vn_payslip
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__payslip_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__payslip_id
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Payslip"
+msgstr "Payslip"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payslip_content_template
+msgid "Payslip Content Template"
+msgstr "Payslip Content Template"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "Payslip Details"
+msgstr "Payslip Details"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payslip_footer_template
+msgid "Payslip Footer Template"
+msgstr "Payslip Footer Template"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__payslip_header_template
+msgid "Payslip Header Template"
+msgstr "Payslip Header Template"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_line_view_form
+msgid "Payslip Line"
+msgstr "Payslip Line"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__line_ids
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_line_view_tree
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Payslip Lines"
+msgstr "Payslip Lines"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__payslip_name
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Payslip Name"
+msgstr "Payslip Name"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Payslip PDF Template Design (MailChimp Style)"
+msgstr "Payslip PDF Template Design (MailChimp Style)"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Payslip Setup"
+msgstr "Payslip Setup"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.report_vn_payslip
+msgid "Payslip Summary"
+msgstr "Payslip Summary"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Payslip email sent successfully!"
+msgstr "Payslip email sent successfully!"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vn_payslip
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_force_delete_wizard__payslip_ids
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_payroll_payslips
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_payslip
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_tree
+msgid "Payslips"
+msgstr "Payslips"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__amount_percentage
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__amount_select__percentage
+msgid "Percentage (%)"
+msgstr "Percentage (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__amount_percentage_base
+msgid "Percentage based on"
+msgstr "Percentage based on"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_personal_deduction
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_personal_deduction
+msgid "Personal Deduction"
+msgstr "Personal Deduction"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Personal Income Tax"
+msgstr "Personal Income Tax"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_personal_deduction
+msgid "Personal tax deduction amount in VND"
+msgstr "Personal tax deduction amount in VND"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Preview"
+msgstr "Preview"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__amount_python_compute
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__amount_select__python
+msgid "Python Code"
+msgstr "Python Code"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__condition_python
+msgid "Python Condition"
+msgstr "Python Condition"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__condition_select__python
+msgid "Python Expression"
+msgstr "Python Expression"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__quarterly
+msgid "Quarterly"
+msgstr "Quarterly"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_salary_rule__condition_select__range
+msgid "Range"
+msgstr "Range"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range
+msgid "Range Based on"
+msgstr "Range Based on"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range_max
+msgid "Range Maximum"
+msgstr "Range Maximum"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range_min
+msgid "Range Minimum"
+msgstr "Range Minimum"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__rating_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__rating_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__rating_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__rating_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__rating_ids
+msgid "Ratings"
+msgstr "Ratings"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Reject"
+msgstr "Reject"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vn_payslip__state__cancel
+msgid "Rejected"
+msgstr "Rejected"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__activity_user_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_user_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_user_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__activity_user_id
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_user_id
+msgid "Responsible User"
+msgstr "Responsible User"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vnpayroll_salary_rule_category
+msgid "Rule Categories"
+msgstr "Rule Categories"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vnpayroll_salary_rule
+msgid "Rules"
+msgstr "Rules"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__si_company
+msgid "SI (Company)"
+msgstr "SI (Company)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__si_employee
+msgid "SI (Employee)"
+msgstr "SI (Employee)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_si_rate_company
+msgid "SI Rate (Company)"
+msgstr "SI Rate (Company)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_si_rate_employee
+msgid "SI Rate (Employee)"
+msgstr "SI Rate (Employee)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_si_salary_cap
+msgid "SI Salary Cap"
+msgstr "SI Salary Cap"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__message_has_sms_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__message_has_sms_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__message_has_sms_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__message_has_sms_error
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "SMS Delivery error"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "Salary Rule"
+msgstr "Salary Rule"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vnpayroll_salary_rule_category
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_list
+msgid "Salary Rule Categories"
+msgstr "Salary Rule Categories"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_form
+msgid "Salary Rule Category"
+msgstr "Salary Rule Category"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vnpayroll_salary_rule
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__rule_ids
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_view_form
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_list
+msgid "Salary Rules"
+msgstr "Salary Rules"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__struct_id
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.hr_contract_view_form_vn
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_view_form
+msgid "Salary Structure"
+msgstr "Salary Structure"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_type_view_form
+msgid "Salary Structure Type"
+msgstr "Salary Structure Type"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vnpayroll_payroll_structure_type
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_type_view_list
+msgid "Salary Structure Types"
+msgstr "Salary Structure Types"
+
+#. module: vn_hr_payroll
+#: model:ir.actions.act_window,name:vn_hr_payroll.action_vnpayroll_payroll_structure
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__struct_ids
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_view_list
+msgid "Salary Structures"
+msgstr "Salary Structures"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__parent_id
+msgid "Salary structure from which this structure inherits rules."
+msgstr "Salary structure from which this structure inherits rules."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__schedule_pay
+msgid "Scheduled Pay"
+msgstr "Scheduled Pay"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_search
+msgid "Search Freelancer Tax Table"
+msgstr "Search Freelancer Tax Table"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Search Payslips"
+msgstr "Search Payslips"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Selected payslips can be deleted normally using the Delete option."
+msgstr "Selected payslips can be deleted normally using the Delete option."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__semi-annually
+msgid "Semi-annually"
+msgstr "Semi-annually"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Send Email"
+msgstr "Send Email"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip_line__sequence
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__sequence
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__sequence
+msgid "Sequence"
+msgstr "Sequence"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__sequence
+msgid "Sequence for ordering categories."
+msgstr "Sequence for ordering categories."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Set to Draft"
+msgstr "Set to Draft"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__skip_pit
+msgid "Skip PIT"
+msgstr "Skip PIT"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__skip_pit
+msgid "Skip Personal Income Tax calculation"
+msgstr "Skip Personal Income Tax calculation"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Social Insurance (Employee)"
+msgstr "Social Insurance (Employee)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_si_rate_company
+msgid "Social Insurance rate for company (%)"
+msgstr "Social Insurance rate for company (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_si_rate_employee
+msgid "Social Insurance rate for employee (%)"
+msgstr "Social Insurance rate for employee (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_dependant_deduction
+msgid "Standard deduction amount per dependant"
+msgstr "Standard deduction amount per dependant"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_personal_deduction
+msgid "Standard personal deduction amount"
+msgstr "Standard personal deduction amount"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_pit_tax_table__income_from
+msgid "Starting income amount for this tax bracket"
+msgstr "Starting income amount for this tax bracket"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__state
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Status"
+msgstr "Status"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__activity_state
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_state
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_state
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__activity_state
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vnpayroll_payroll_structure_type
+msgid "Structure Types"
+msgstr "Structure Types"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vnpayroll_payroll_structure
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_type_view_form
+msgid "Structures"
+msgstr "Structures"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Success"
+msgstr "Success"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Tax"
+msgstr "Tax"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.hr_contract_view_form_vn
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Tax Deductions"
+msgstr "Tax Deductions"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_freelancer_tax_table__tax_rate
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_pit_tax_table__tax_rate
+msgid "Tax Rate (%)"
+msgstr "Tax Rate (%)"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_pit_tax_table.py:0
+msgid "Tax brackets cannot overlap with existing brackets"
+msgstr "Tax brackets cannot overlap with existing brackets"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_pit_tax_table.py:0
+msgid "Tax rate must be between 0 and 100"
+msgstr "Tax rate must be between 0 and 100"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_pit_tax_table__tax_rate
+msgid "Tax rate percentage for this bracket"
+msgstr "Tax rate percentage for this bracket"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__taxable_income
+msgid "Taxable Income"
+msgstr "Taxable Income"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Template Variables Guide"
+msgstr "Template Variables Guide"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_payroll_structure_type_code_company_uniq
+msgid "The code of the payroll structure type must be unique per company!"
+msgstr "The code of the payroll structure type must be unique per company!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_salary_rule_category_code_company_uniq
+msgid "The code of the salary rule category must be unique per company!"
+msgstr "The code of the salary rule category must be unique per company!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_salary_rule_code_company_uniq
+msgid "The code of the salary rule must be unique per company!"
+msgstr "The code of the salary rule must be unique per company!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_payroll_structure_code_company_uniq
+msgid "The code of the salary structure must be unique per company!"
+msgstr "The code of the salary structure must be unique per company!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range
+msgid ""
+"The code that will be executed to get the value to compare to the range."
+msgstr ""
+"The code that will be executed to get the value to compare to the range."
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "The employee does not have an email address."
+msgstr "The employee does not have an email address."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range_max
+msgid "The maximum value for the range condition"
+msgstr "The maximum value for the range condition"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__condition_range_min
+msgid "The minimum value for the range condition"
+msgstr "The minimum value for the range condition"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_payroll_structure_type_name_company_uniq
+msgid "The name of the payroll structure type must be unique per company!"
+msgstr "The name of the payroll structure type must be unique per company!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_salary_rule_category_name_company_uniq
+msgid "The name of the salary rule category must be unique per company!"
+msgstr "The name of the salary rule category must be unique per company!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_salary_rule_name_company_uniq
+msgid "The name of the salary rule must be unique per company!"
+msgstr "The name of the salary rule must be unique per company!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.constraint,message:vn_hr_payroll.constraint_vnpayroll_payroll_structure_name_company_uniq
+msgid "The name of the salary structure must be unique per company!"
+msgstr "The name of the salary structure must be unique per company!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__amount_percentage_base
+msgid ""
+"The python code that will be executed to get the value on which the "
+"percentage will be applied."
+msgstr ""
+"The python code that will be executed to get the value on which the "
+"percentage will be applied."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.view_vn_payslip_force_delete_wizard_form
+msgid "This action cannot be undone."
+msgstr "This action cannot be undone."
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "This payslip can be deleted normally using the Delete option."
+msgstr "This payslip can be deleted normally using the Delete option."
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Time Off"
+msgstr "Time Off"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Timesheet model not found. Cannot fetch timesheet hours."
+msgstr "Timesheet model not found. Cannot fetch timesheet hours."
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Timesheet module is not installed. Cannot fetch timesheet hours."
+msgstr "Timesheet module is not installed. Cannot fetch timesheet hours."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_total_deduction
+msgid "Total Deduction"
+msgstr "Total Deduction"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_total_dependant_deduction
+msgid "Total Dependant Deduction"
+msgstr "Total Dependant Deduction"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_tree
+msgid "Total Gross"
+msgstr "Total Gross"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_tree
+msgid "Total Insurance"
+msgstr "Total Insurance"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__total_insurance_company
+msgid "Total Insurance (Company)"
+msgstr "Total Insurance (Company)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__total_insurance_employee
+msgid "Total Insurance (Employee)"
+msgstr "Total Insurance (Employee)"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_tree
+msgid "Total Net"
+msgstr "Total Net"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_tree
+msgid "Total PIT"
+msgstr "Total PIT"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__total_working_days
+msgid "Total Working Days"
+msgstr "Total Working Days"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_allowances
+msgid "Total allowances amount in VND"
+msgstr "Total allowances amount in VND"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_total_dependant_deduction
+msgid "Total deduction for all dependants"
+msgstr "Total deduction for all dependants"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_total_deduction
+msgid "Total deduction including personal and dependants"
+msgstr "Total deduction including personal and dependants"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__total_working_days
+msgid "Total working days in period (Mon-Fri only)"
+msgstr "Total working days in period (Mon-Fri only)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__type_id
+msgid "Type"
+msgstr "Type"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__activity_exception_decoration
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__activity_exception_decoration
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__activity_exception_decoration
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__activity_exception_decoration
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Type of the exception activity on record."
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__ui_company
+msgid "UI (Company)"
+msgstr "UI (Company)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__ui_employee
+msgid "UI (Employee)"
+msgstr "UI (Employee)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_ui_rate_company
+msgid "UI Rate (Company)"
+msgstr "UI Rate (Company)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_ui_rate_employee
+msgid "UI Rate (Employee)"
+msgstr "UI Rate (Employee)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payroll_config__vn_ui_salary_cap
+msgid "UI Salary Cap"
+msgstr "UI Salary Cap"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "Unemployment Insurance (Employee)"
+msgstr "Unemployment Insurance (Employee)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_ui_rate_company
+msgid "Unemployment Insurance rate for company (%)"
+msgstr "Unemployment Insurance rate for company (%)"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payroll_config__vn_ui_rate_employee
+msgid "Unemployment Insurance rate for employee (%)"
+msgstr "Unemployment Insurance rate for employee (%)"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_union_fee
+msgid "Union Fee"
+msgstr "Union Fee"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_union_fee
+msgid "Union fee amount in VND"
+msgstr "Union fee amount in VND"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__unpaid_leave_days
+msgid "Unpaid Leave Days"
+msgstr "Unpaid Leave Days"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__sequence
+msgid "Use to arrange calculation sequence"
+msgstr "Use to arrange calculation sequence"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__appears_on_payslip
+msgid "Used to display the salary rule on payslip."
+msgstr "Used to display the salary rule on payslip."
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vnpayroll_salary_rule
+msgid "VN Payroll Salary Rule"
+msgstr "VN Payroll Salary Rule"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vnpayroll_salary_rule_category
+msgid "VN Payroll Salary Rule Category"
+msgstr "VN Payroll Salary Rule Category"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vnpayroll_payroll_structure
+msgid "VN Payroll Structure"
+msgstr "VN Payroll Structure"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vnpayroll_payroll_structure_type
+msgid "VN Payroll Structure Type"
+msgstr "VN Payroll Structure Type"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_hr_contract__vn_structure_type_id
+msgid "VN Salary Structure Type"
+msgstr "VN Salary Structure Type"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Verify"
+msgstr "Verify"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_freelancer_tax_table
+msgid "Vietnam Freelancer Tax Table"
+msgstr "Vietnam Freelancer Tax Table"
+
+#. module: vn_hr_payroll
+#: model:ir.ui.menu,name:vn_hr_payroll.menu_vn_hr_payroll_root
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.hr_contract_view_form_vn
+msgid "Vietnam Payroll"
+msgstr "Vietnam Payroll"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_payroll_config
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "Vietnam Payroll Configuration"
+msgstr "Vietnam Payroll Configuration"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_payslip
+msgid "Vietnam Payslip"
+msgstr "Vietnam Payslip"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_payslip_line
+msgid "Vietnam Payslip Line"
+msgstr "Vietnam Payslip Line"
+
+#. module: vn_hr_payroll
+#: model:ir.model,name:vn_hr_payroll.model_vn_pit_tax_table
+msgid "Vietnam Personal Income Tax Table"
+msgstr "Vietnam Personal Income Tax Table"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Wage"
+msgstr "Wage"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.hr_contract_view_form_vn
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_form
+msgid "Wage Information"
+msgstr "Wage Information"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_hr_contract__vn_insurance_wage
+msgid "Wage used for insurance contribution calculation"
+msgstr "Wage used for insurance contribution calculation"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vn_payslip__state__verify
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payslip_view_search
+msgid "Waiting"
+msgstr "Waiting"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.view_vn_payslip_force_delete_wizard_form
+msgid "Warning!"
+msgstr "Warning!"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__website_message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure__website_message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_payroll_structure_type__website_message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule__website_message_ids
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vnpayroll_salary_rule_category__website_message_ids
+msgid "Website Messages"
+msgstr "Website Messages"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,help:vn_hr_payroll.field_vn_payslip__website_message_ids
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure__website_message_ids
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_payroll_structure_type__website_message_ids
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule__website_message_ids
+#: model:ir.model.fields,help:vn_hr_payroll.field_vnpayroll_salary_rule_category__website_message_ids
+msgid "Website communication history"
+msgstr "Website communication history"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields.selection,name:vn_hr_payroll.selection__vnpayroll_payroll_structure__schedule_pay__weekly
+msgid "Weekly"
+msgstr "Weekly"
+
+#. module: vn_hr_payroll
+#: model:ir.model.fields,field_description:vn_hr_payroll.field_vn_payslip__worked_hours
+msgid "Worked Hours"
+msgstr "Worked Hours"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.view_vn_payslip_force_delete_wizard_form
+msgid "Yes, Delete"
+msgstr "Yes, Delete"
+
+#. module: vn_hr_payroll
+#. odoo-python
+#: code:addons/vn_hr_payroll/models/vn_payslip.py:0
+msgid "You cannot delete a payslip which is not in draft or cancelled state"
+msgstr "You cannot delete a payslip which is not in draft or cancelled state"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_freelancer_tax_table_view_form
+msgid "e.g. 0 - 2,000,000 (10%)"
+msgstr "e.g. 0 - 2,000,000 (10%)"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_view_form
+msgid "e.g. Base for new structures"
+msgstr "e.g. Base for new structures"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_category_view_form
+msgid "e.g. Basic"
+msgstr "e.g. Basic"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_payroll_structure_type_view_form
+msgid "e.g. Employee"
+msgstr "e.g. Employee"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "e.g. Gross"
+msgstr "e.g. Gross"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "e.g. Payslip - {{payslip_reference}} for {{employee_name}}"
+msgstr "e.g. Payslip - {{payslip_reference}} for {{employee_name}}"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vnpayroll_salary_rule_view_form
+msgid "e.g. categories.BASIC or contract.wage"
+msgstr "e.g. categories.BASIC or contract.wage"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "e.g. hr@company.com"
+msgstr "e.g. hr@company.com"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "👁 Preview Content"
+msgstr "👁 Preview Content"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "👁 Preview Footer"
+msgstr "👁 Preview Footer"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "👁 Preview Full Email"
+msgstr "👁 Preview Full Email"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "👁 Preview Full Payslip"
+msgstr "👁 Preview Full Payslip"
+
+#. module: vn_hr_payroll
+#: model_terms:ir.ui.view,arch_db:vn_hr_payroll.vn_payroll_config_view_form
+msgid "👁 Preview Header"
+msgstr "👁 Preview Header"

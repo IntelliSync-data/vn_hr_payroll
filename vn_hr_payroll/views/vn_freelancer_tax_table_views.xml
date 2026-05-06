@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <!-- Tree View -->
+    <record id="vn_freelancer_tax_table_view_list" model="ir.ui.view">
+        <field name="name">vn.freelancer.tax.table.view.list</field>
+        <field name="model">vn.freelancer.tax.table</field>
+        <field name="arch" type="xml">
+            <list string="Freelancer Tax Table">
+                <field name="name"/>
+                <field name="income_from"/>
+                <field name="income_to"/>
+                <field name="tax_rate"/>
+                <field name="fixed_deduction"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="active" invisible="1"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="vn_freelancer_tax_table_view_form" model="ir.ui.view">
+        <field name="name">vn.freelancer.tax.table.view.form</field>
+        <field name="model">vn.freelancer.tax.table</field>
+        <field name="arch" type="xml">
+            <form string="Freelancer Tax Table">
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+                            <field name="active" widget="boolean_button"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="e.g. 0 - 2,000,000 (10%)"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="income_from"/>
+                            <field name="income_to"/>
+                        </group>
+                        <group>
+                            <field name="tax_rate"/>
+                            <field name="fixed_deduction"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="vn_freelancer_tax_table_view_search" model="ir.ui.view">
+        <field name="name">vn.freelancer.tax.table.view.search</field>
+        <field name="model">vn.freelancer.tax.table</field>
+        <field name="arch" type="xml">
+            <search string="Search Freelancer Tax Table">
+                <field name="name"/>
+                <field name="income_from"/>
+                <field name="income_to"/>
+                <field name="tax_rate"/>
+                <separator/>
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Company" name="company" domain="[]" context="{'group_by': 'company_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_vn_freelancer_tax_table" model="ir.actions.act_window">
+        <field name="name">Freelancer Tax Table</field>
+        <field name="res_model">vn.freelancer.tax.table</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="vn_freelancer_tax_table_view_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new freelancer tax table entry
+            </p>
+            <p>
+                Define tax rates and fixed deductions for different income ranges for freelancers.
+            </p>
+        </field>
+    </record>
+    </data>
+</odoo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Contract Form View Extension -->
+        <record id="hr_contract_view_form_vn" model="ir.ui.view">
+            <field name="name">hr.contract.view.form.vn</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Vietnam Payroll" name="vietnam_payroll">
+                        <group>
+                            <group string="Salary Structure">
+                                <field name="vn_structure_type_id"/>
+                            </group>
+                            <group string="Wage Information">
+                                <field name="vn_basic_wage"/>
+                                <field name="vn_allowances"/>
+                                <field name="vn_insurance_wage"/>
+                                <field name="vn_union_fee"/>
+                            </group>
+                            <group string="Tax Deductions">
+                                <field name="vn_personal_deduction"/>
+                                <field name="vn_dependant_deduction"/>
+                                <field name="vn_number_of_dependants"/>
+                                <field name="vn_total_dependant_deduction" readonly="1"/>
+                                <field name="vn_total_deduction" readonly="1"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_vn_payslip">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-set="payroll_config" t-value="env['vn.payroll.config'].get_config()"/>
+                <t t-if="payroll_config and payroll_config.payslip_header_template">
+                    <!-- Use custom template -->
+                    <div class="page">
+                        <style>
+                            * {
+                                font-family: 'Times New Roman', Times, 'Liberation Serif', serif !important;
+                            }
+                        </style>
+                        <t t-set="custom_template" t-value="payroll_config.render_payslip_template(o)[0]"/>
+                        <t t-raw="custom_template"/>
+                    </div>
+                </t>
+                <t t-else="">
+                    <!-- Use default template -->
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <style>
+                                * {
+                                    font-family: 'Times New Roman', Times, 'Liberation Serif', serif !important;
+                                }
+                            </style>
+                            <!-- Header Section -->
+                            <div class="mb-4 pb-2 border-bottom">
+                                <h2 class="text-center mb-4">Payslip</h2>
+
+                                <!-- Employee and Company Info -->
+                                <div class="row mb-4">
+                                    <div class="col-6">
+                                        <div class="p-3 bg-light rounded">
+                                            <p class="mb-2"><strong>Employee:</strong> <span t-field="o.employee_id.name"/></p>
+                                            <p class="mb-0"><strong>Reference:</strong> <span t-field="o.name"/></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="p-3 bg-light rounded">
+                                            <p class="mb-2"><strong>Period:</strong> <span t-field="o.date_from"/> - <span t-field="o.date_to"/></p>
+                                            <p class="mb-0"><strong>Company:</strong> <span t-field="o.company_id.name"/></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Main Payslip Information -->
+                            <div class="mb-4">
+                                <h4 class="mb-3 pb-2 border-bottom">Payslip Summary</h4>
+                                <table class="table table-sm table-bordered">
+                                    <!-- Show worked hours for all, but will be 0 for non-freelancers -->
+                                    <thead>
+                                        <tr>
+                                            <td class="px-3 table-light"><strong>Item</strong></td>
+                                            <td class="px-3 oe_rightalign"><strong>Amount (VND)</strong></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="px-3 table-light"><strong>Worked Hours</strong></td>
+                                            <td class="px-3 oe_rightalign" t-esc="o.worked_hours" />
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3 table-light"><strong>Hourly/Monthly Rate</strong></td>
+                                            <td class="px-3 oe_rightalign" t-esc="'{:,.0f}'.format(o.contract_id.wage or 0)" />
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3 table-light"><strong>Basic Wage</strong></td>
+                                            <td class="px-3 oe_rightalign" t-esc="'{:,.0f}'.format(o.basic_wage or 0)" />
+                                        </tr>
+                                        <tr t-if="o.allowances != 0">
+                                            <td class="px-3 table-light"><strong>Allowances</strong></td>
+                                            <td class="px-3 oe_rightalign" t-esc="'{:,.0f}'.format(o.allowances or 0)" />
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3 table-light"><strong>Gross Wage</strong></td>
+                                            <td class="px-3 oe_rightalign font-weight-bold" t-esc="'{:,.0f}'.format(o.gross_wage or 0)" />
+                                        </tr>
+                                        <tr t-if="not o.is_freelancer">
+                                            <td class="px-3 table-light"><strong>Total Insurance (Employee)</strong></td>
+                                            <td class="px-3 oe_rightalign text-danger" t-esc="'{:,.0f}'.format(o.total_insurance_employee or 0)" />
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3 table-light"><strong>Personal Income Tax</strong></td>
+                                            <td class="px-3 oe_rightalign text-danger" t-esc="'{:,.0f}'.format(o.pit or 0)" />
+                                        </tr>
+                                        <tr class="font-weight-bold bg-light border-top">
+                                            <td class="px-3 table-light"><strong>Net Income</strong></td>
+                                            <td class="px-3 oe_rightalign" t-esc="'{:,.0f}'.format(o.net_income or 0)" />
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- Payslip Lines -->
+                            <div class="mb-4">
+                                <h4 class="mb-3 pb-2 border-bottom">Payslip Details</h4>
+                                <table class="table table-sm table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td class="px-3 table-light"><strong>Description</strong></td>
+                                            <td class="px-3 oe_rightalign"><strong>Amount (VND)</strong></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr t-foreach="o.line_ids" t-as="line">
+                                            <td class="px-3"><span t-field="line.name"/></td>
+                                            <td class="px-3 oe_rightalign" t-esc="'{:,.0f}'.format(line.amount or 0)" />
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

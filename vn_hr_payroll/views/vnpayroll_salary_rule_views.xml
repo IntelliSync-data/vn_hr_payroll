@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Salary Rule Tree View -->
+        <record id="vnpayroll_salary_rule_view_list" model="ir.ui.view">
+            <field name="name">vnpayroll.salary.rule.view.list</field>
+            <field name="model">vnpayroll.salary.rule</field>
+            <field name="arch" type="xml">
+                <list string="Salary Rules">
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="category_id"/>
+                    <field name="struct_id"/>
+                    <field name="condition_select"/>
+                    <field name="amount_select"/>
+                    <field name="active" widget="boolean_toggle"/>
+                    <field name="company_id" groups="base.group_multi_company"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Salary Rule Form View -->
+        <record id="vnpayroll_salary_rule_view_form" model="ir.ui.view">
+            <field name="name">vnpayroll.salary.rule.view.form</field>
+            <field name="model">vnpayroll.salary.rule</field>
+            <field name="arch" type="xml">
+                <form string="Salary Rule">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="toggle_active" type="object" class="oe_stat_button" icon="fa-archive">
+                                <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+                            </button>
+                        </div>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1><field name="name" placeholder="e.g. Gross"/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="code"/>
+                                <field name="category_id"/>
+                                <field name="struct_id"/> 
+                            </group>
+                            <group>
+                                <field name="sequence"/>
+                                <field name="partner_id"/>
+                                <field name="company_id" groups="base.group_multi_company"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Computation" name="computation">
+                                <group string="Conditions">
+                                    <field name="condition_select"/>
+                                    <field name="condition_python" 
+                                           placeholder="# Available variables: categories, payslip, employee, contract, rules, result, result_qty, result_rate\n# Enter a Python expression that returns a boolean. Example: result = rules.NET > 1000" 
+                                           invisible="condition_select not in ['python']"/>
+                                </group>
+                                <group string="Amount Computation">
+                                    <field name="amount_select"/>
+                                    <field name="amount_fix" invisible="amount_select not in ['fix']"/>
+                                    <field name="amount_percentage" invisible="amount_select not in ['percentage']"/>
+                                    <field name="amount_percentage_base" invisible="amount_select not in ['percentage']" 
+                                           placeholder="e.g. categories.BASIC or contract.wage"/>
+                                    <field name="amount_python_compute" 
+                                           placeholder="# Available variables: categories, payslip, employee, contract, rules, result, result_qty, result_rate\n# Enter a Python expression that returns a float. Example: result = contract.wage * 0.10" 
+                                           invisible="amount_select not in ['code']"/>
+                                </group>
+                            </page>
+                            <page string="Description" name="description">
+                                <field name="note" placeholder="Description of the rule..."/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

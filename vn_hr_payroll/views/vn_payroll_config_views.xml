@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Payroll Config Form View -->
+        <record id="vn_payroll_config_view_form" model="ir.ui.view">
+            <field name="name">vn.payroll.config.view.form</field>
+            <field name="model">vn.payroll.config</field>
+            <field name="arch" type="xml">
+                <form string="Vietnam Payroll Configuration">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="active" invisible="1"/>
+                        </group>
+                        <notebook>
+                            <page string="Insurance Rates" name="insurance_rates">
+                                <group>
+                                    <group string="Employee Contribution">
+                                        <field name="vn_si_rate_employee"/>
+                                        <field name="vn_hi_rate_employee"/>
+                                        <field name="vn_ui_rate_employee"/>
+                                    </group>
+                                    <group string="Company Contribution">
+                                        <field name="vn_si_rate_company"/>
+                                        <field name="vn_hi_rate_company"/>
+                                        <field name="vn_ui_rate_company"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Insurance Caps" name="insurance_caps">
+                                <group>
+                                    <field name="vn_si_salary_cap"/>
+                                    <field name="vn_hi_salary_cap"/>
+                                    <field name="vn_ui_salary_cap"/>
+                                </group>
+                            </page>
+                            <page string="Tax Deductions" name="tax_deductions">
+                                <group>
+                                    <field name="vn_personal_deduction"/>
+                                    <field name="vn_dependant_deduction"/>
+                                </group>
+                            </page>
+                            <page string="Email Setup" name="email_setup">
+                                <group string="Email Configuration">
+                                    <field name="email_subject_template" placeholder="e.g. Payslip - {{payslip_reference}} for {{employee_name}}"/>
+                                    <field name="payroll_from_email" placeholder="e.g. payroll@company.com"/>
+                                    <field name="payroll_cc_email" placeholder="e.g. hr@company.com"/>
+                                </group>
+
+                                <separator string="Email Template Design (MailChimp Style)"/>
+
+                                <group string="Header Template">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <field name="email_header_template" widget="ace" options="{'mode': 'xml'}" nolabel="1"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <button name="action_preview_email_header" type="object" string="👁 Preview Header" class="btn-link"/>
+                                        </div>
+                                    </div>
+                                </group>
+
+                                <group string="Content Template">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <field name="email_content_template" widget="ace" options="{'mode': 'xml'}" nolabel="1"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <button name="action_preview_email_content" type="object" string="👁 Preview Content" class="btn-link"/>
+                                        </div>
+                                    </div>
+                                </group>
+
+                                <group string="Footer Template">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <field name="email_footer_template" widget="ace" options="{'mode': 'xml'}" nolabel="1"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <button name="action_preview_email_footer" type="object" string="👁 Preview Footer" class="btn-link"/>
+                                        </div>
+                                    </div>
+                                </group>
+
+                                <div class="text-center mb-3">
+                                    <button name="action_preview_email_full" type="object" string="👁 Preview Full Email" class="btn-primary"/>
+                                </div>
+
+                                <group string="Template Variables Guide">
+                                    <field name="email_template_help" nolabel="1" readonly="1" widget="text" class="text-muted" style="font-family: monospace; font-size: 12px; background-color: #f8f9fa; padding: 15px; border-radius: 5px;"/>
+                                </group>
+
+                                <div class="alert alert-success" role="alert">
+                                    <strong>💡 Pro Tip:</strong> Use the template variables above to create dynamic, personalized emails just like MailChimp!
+                                    Your email will combine Header + Content + Footer automatically.
+                                </div>
+                            </page>
+                            <page string="Payslip Setup" name="payslip_setup">
+                                <separator string="Payslip PDF Template Design (MailChimp Style)"/>
+
+                                <group string="Header Template">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <field name="payslip_header_template" widget="ace" options="{'mode': 'xml'}" nolabel="1"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <button name="action_preview_payslip_header" type="object" string="👁 Preview Header" class="btn-link"/>
+                                        </div>
+                                    </div>
+                                </group>
+
+                                <group string="Content Template">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <field name="payslip_content_template" widget="ace" options="{'mode': 'xml'}" nolabel="1"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <button name="action_preview_payslip_content" type="object" string="👁 Preview Content" class="btn-link"/>
+                                        </div>
+                                    </div>
+                                </group>
+
+                                <group string="Footer Template">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <field name="payslip_footer_template" widget="ace" options="{'mode': 'xml'}" nolabel="1"/>
+                                        </div>
+                                        <div class="col-12">
+                                            <button name="action_preview_payslip_footer" type="object" string="👁 Preview Footer" class="btn-link"/>
+                                        </div>
+                                    </div>
+                                </group>
+
+                                <div class="text-center mb-3">
+                                    <button name="action_preview_payslip_full" type="object" string="👁 Preview Full Payslip" class="btn-primary"/>
+                                </div>
+
+                                <group string="Template Variables Guide">
+                                    <field name="email_template_help" nolabel="1" readonly="1" widget="text" class="text-muted" style="font-family: monospace; font-size: 12px; background-color: #f8f9fa; padding: 15px; border-radius: 5px;"/>
+                                </group>
+
+                                <div class="alert alert-info" role="alert">
+                                    <strong>📄 PDF Templates:</strong> Design your payslip PDF layout with Header + Content + Footer templates.
+                                    The Content template includes QWeb syntax for dynamic payslip lines rendering.
+                                </div>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Payroll Config Action -->
+        <record id="action_vn_payroll_config" model="ir.actions.act_window">
+            <field name="name">Payroll Configuration</field>
+            <field name="res_model">vn.payroll.config</field>
+            <field name="view_mode">form</field>
+            <field name="target">current</field>
+            <field name="res_id">1</field> <!-- Will show the first record -->
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Configure Vietnam Payroll settings
+                </p>
+            </field>
+        </record>
+
+        <!-- PIT Tax Table Form View -->
+        <record id="vn_pit_tax_table_view_form" model="ir.ui.view">
+            <field name="name">vn.pit.tax.table.view.form</field>
+            <field name="model">vn.pit.tax.table</field>
+            <field name="arch" type="xml">
+                <form string="PIT Tax Bracket">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="income_from"/>
+                                <field name="income_to"/>
+                            </group>
+                            <group>
+                                <field name="tax_rate"/>
+                                <field name="fixed_deduction"/>
+                                <field name="name" readonly="1"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- PIT Tax Table List View -->
+        <record id="vn_pit_tax_table_view_tree" model="ir.ui.view">
+            <field name="name">vn.pit.tax.table.view.list</field>
+            <field name="model">vn.pit.tax.table</field>
+            <field name="arch" type="xml">
+                <list string="PIT Tax Brackets">
+                    <field name="name"/>
+                    <field name="income_from"/>
+                    <field name="income_to"/>
+                    <field name="tax_rate"/>
+                    <field name="fixed_deduction"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- PIT Tax Table Action -->
+        <record id="action_vn_pit_tax_table" model="ir.actions.act_window">
+            <field name="name">PIT Tax Table</field>
+            <field name="res_model">vn.pit.tax.table</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new PIT tax bracket
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

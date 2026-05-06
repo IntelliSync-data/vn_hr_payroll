@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <record id="hr_contract_view_form_inherit_wage_type" model="ir.ui.view">
+            <field name="name">hr.contract.form.inherit.wage.type</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <!-- 1. Chèn trường wage_type trước trường wage -->
+                <xpath expr="//field[@name='wage']" position="before">
+                    <field name="wage_type"/>
+                </xpath>
+
+                <!-- 2. Ẩn đơn vị "/ month" gốc -->
+                <!-- Nhắm vào span class="oe_grey" chứa "/ month" bên trong div.o_row chứa field wage -->
+                <xpath expr="//div[@name='wage']/div[@name='wage_period_label' and normalize-space(.)='/ month']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+
+                <!-- 3. Thêm các đơn vị động của chúng ta sau trường wage -->
+                <xpath expr="//field[@name='wage']" position="after">
+                    <span invisible="wage_type == 'hourly'" class="oe_inline"> / month</span>
+                    <span invisible="wage_type != 'hourly'" class="oe_inline"> / hour</span>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

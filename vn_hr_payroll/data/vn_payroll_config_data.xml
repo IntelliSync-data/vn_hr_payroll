@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Default Payroll Configuration -->
+        <record id="vn_payroll_config_default" model="vn.payroll.config">
+            <field name="name">Vietnam Payroll Configuration</field>
+            <field name="active">True</field>
+            <field name="vn_si_rate_employee">8.0</field>
+            <field name="vn_hi_rate_employee">1.5</field>
+            <field name="vn_ui_rate_employee">1.0</field>
+            <field name="vn_si_rate_company">17.5</field>
+            <field name="vn_hi_rate_company">3.0</field>
+            <field name="vn_ui_rate_company">1.0</field>
+            <field name="vn_si_salary_cap">36000000</field>
+            <field name="vn_hi_salary_cap">36000000</field>
+            <field name="vn_ui_salary_cap">36000000</field>
+            <field name="vn_personal_deduction">11000000</field>
+            <field name="vn_dependant_deduction">4400000</field>
+        </record>
+    </data>
+</odoo>
