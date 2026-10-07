@@ -56,7 +56,7 @@
             fi
 
             echo "Updating vn_hr_payroll module..."
-            sudo -u odoo /opt/odoo-venv/bin/python /opt/odoo18/odoo-bin -c /etc/odoo/odoo.conf -d ${{ secrets.EHUB_DB_NAME }} -u vn_hr_payroll,vn_hr_payroll_template --stop-after-init --no-http
+            sudo -u odoo /opt/odoo-venv/bin/python /opt/odoo18/odoo-bin -c /etc/odoo/odoo.conf -d ${{ secrets.EHUB_DB_NAME }} -u contract_advance,default_user_groups,vn_hr_payroll --stop-after-init --no-http
             if [ $? -ne 0 ]; then
               echo "Module update FAILED"
               exit 1
